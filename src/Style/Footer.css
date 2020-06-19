@@ -1,0 +1,8 @@
+.F_links a{
+    text-decoration: none;
+}
+.F_footer{
+    box-shadow: 3px 0 px 1px 5px rgba(20,23,28,.1);
+    margin-top:10%;
+    border-top: 0.5px solid grey;
+}

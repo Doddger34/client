@@ -1,0 +1,261 @@
+* {
+  list-style: none;
+}
+.c_header {
+  background: #fff;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
+    0 3px 1px 0 rgba(20, 23, 28, 0.1);
+  display: block;
+  position: relative;
+  z-index: 1010;
+}
+.c_header .c_header__inner {
+  display: flex;
+  justify-content: space-between;
+  background: inherit;
+  box-sizing: border-box;
+  height: 65px;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1011;
+}
+.c_header .c_header__logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.c_header .c_header__logo-wrap {
+  font-weight: 450;
+  font-size: 20px;
+  margin: 0 16px 0 0;
+  text-decoration: none;
+  color: #29303b;
+}
+.c_header .c_header__left {
+  flex: 1;
+  min-width: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.c_header .c_header__left-link {
+  text-decoration: none;
+  color: #29303b;
+  font-size: 15px;
+}
+.c_header .c_header__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.c_header .dropdown {
+  font-size: 13px;
+  margin: 0 2px;
+  padding: 10px 0;
+}
+.btn-primary:hover {
+  background-color: #ec5252; 
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #ec5252; 
+  border-color: #ec5252;
+}
+.btn-quaternary {
+  color: #686f7a;
+  background-color: #fff;
+  border: 1px solid #686f7a;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #ec5252;
+  border: 1px solid transparent;
+}
+.btn-primary:active {
+  color: #fff;
+  background-color: #ec5252;
+  border: 1px solid transparent;
+}
+.c_header .c_header__profile-link {
+  font-size: 17px;
+  text-decoration: none;
+  color:#29303b;
+}
+.btn-outline-secondary:hover{
+  background-color: none;
+}
+/*19.03.2020*/
+
+.c_header .c_header__mobile-bt {
+  display: none;
+  background: 0 0;
+  border: none;
+  font-size: 24px;
+  color: #686f7a;
+  width: 48px;
+  height: 48px;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  padding: 0;
+}
+.c_header .c_header__overlay {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1011;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  -moz-transition: opacity 200ms ease-out;
+  -ms-transition: opacity 200ms ease-out;
+  -o-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+  background-color: rgba(41, 48, 59, 0.55);
+}
+.c_header .nav-open .mobile-nav {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.pb-space-sm {
+  padding-bottom: 16px;
+}
+.c_header .mobile_link {
+  text-decoration: none;
+}
+
+/*MEDİA*/
+
+@media screen and (max-width: 767px) {
+  .c_header .c_header__left {
+    display: none;
+  }
+  .c_header .c_header__right {
+    display: none;
+  }
+  .c_header .c_header__logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .hidden-xs {
+    display: none !important;
+  }
+  /*19,30,2020*/
+
+  .c_header .c_header__mobile-bt {
+    display: block;
+    z-index: 1;
+    position: relative;
+  }
+  .c_header .c_header__left {
+    flex: initial;
+    min-width: 1px;
+  }
+  .c_header .overlay--mobile-show {
+    visibility: visible;
+    opacity: 1;
+  }
+  .c_header .mobile-nav {
+    background: #fff;
+    height: 100%;
+    left: 0;
+    max-width: 80%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 285px;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transition: -webkit-transform 600ms
+      cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -moz-transition: -moz-transform 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -o-transition: -o-transform 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: transform 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    z-index: 1012;
+  }
+  .c_header .mobile-nav .menu__link--auth .btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    font-weight: 600;
+    text-align: left;
+  }
+  .c_header .mobile-nav .menu__label-temporary-spacing {
+    padding: 8px 16px 0;
+  }
+  .c_header .mobile-nav .menu__label {
+    font-size: 13px;
+    color: #686f7a;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    letter-spacing: 1px;
+  }
+  .c_header .mobile-nav .menu__link-temporary-spacing a:not(.btn) {
+    padding: 11px 16px;
+  }
+  .c_header .mobile-nav .menu__link a:not(.btn) {
+    color: #29303b;
+    padding: 8px 16px;
+  }
+  .c_header .mobile-nav__main {
+    -webkit-transition: 600ms cubic-bezier(0.42, 0, 0, 0.99);
+    -moz-transition: 600ms cubic-bezier(0.42, 0, 0, 0.99);
+    -ms-transition: 600ms cubic-bezier(0.42, 0, 0, 0.99);
+    -o-transition: 600ms cubic-bezier(0.42, 0, 0, 0.99);
+    transition: 600ms cubic-bezier(0.42, 0, 0, 0.99);
+    /* -webkit-transform: translate3d(0,0,0); */
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    overflow-y: auto;
+    height: 100%;
+    padding-bottom: 64px;
+  }
+  .c_header .mobile-nav .menu__link-temporary-spacing {
+    padding: 11px 16px;
+  }
+  .mobile-nav--nav-section--Fc5GU {
+    padding: .8rem 0;
+}
+  .udlite-block-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .udlite-block-list li {
+    padding-left: 0;
+  }
+  .mobile-nav--nav-item--1hfFJ {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+  .udlite-block-list-item-content {
+    flex: 1;
+    min-width: 1px;
+  }
+  .udlite-in-udheavy .udlite-text-md {
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.6rem;
+}
+.udlite-block-list .udlite-block-list-item {
+  padding: .8rem 0;
+}
+}

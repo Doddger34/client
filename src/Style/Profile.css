@@ -1,0 +1,156 @@
+#contentCol {
+    box-sizing: border-box;
+    flex-grow: 1;
+    margin-left: 0;
+    width: auto;
+}
+#contentCol #header{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+#headerArea {
+    float: left;
+    margin: 0 20px 0;
+    width: 759px;
+}
+.uiHeaderPage {
+    padding: 6px 0 16px;
+}
+.clearfix {
+    zoom: 1;
+}
+._ohf {
+    float: right;
+}
+.accessible_elem {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.uiHeader h2 {
+    color: #162643;
+    font-size: 16px;
+}
+.uiHeaderPage .uiHeaderActions {
+    margin-top: -1px;
+}
+.uiHeader h2.uiHeaderTitle {
+    color: #1c1e21;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+}
+.uiHeaderPage .uiHeaderTitle {
+    line-height: 20px;
+    min-height: 20px;
+    padding-bottom: 2px;
+    vertical-align: bottom;
+}
+.uiHeader .uiHeaderTitle {
+    outline: none;
+}
+.clearfix {
+    zoom: 1;
+}
+
+#contentCol #content {
+    box-sizing: border-box;
+    width: 100%;
+}
+#contentArea {
+    margin-right: -1px;
+    outline: none;
+    padding-left: 1px;
+    word-wrap: break-word;
+}
+.fbSettingsListBorderTop {
+    border-top: 1px solid #aaa;
+}
+.fbSettingsListBorderBottom {
+    border-bottom: 1px solid #aaa;
+}
+#contentCol .fbSettingsList li {
+    padding: 8px 0;
+}
+.uiList>li:first-child {
+    border-width: 0;
+}
+._4ks>li {
+    border-color: #ebedf0;
+    border-style: solid;
+}
+._4kg>li {
+    border-width: 1px 0 0 0;
+}
+.clearfix {
+    zoom: 1;
+}
+.fbSettingsList div.fbSettingsListLink {
+    background: transparent;
+    display: block;
+}
+.pvm {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.phs {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.clearfix {
+    zoom: 1;
+}   
+#contentCol .fbSettingsList h3{
+    color: #1c1e21;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    padding-right: 5px;
+    width: 180px;
+}
+#contentCol h3 {
+    color: #1c1e21;
+    font-size: 15px;
+    line-height: 20px;
+}
+.fbSettingsList .fbSettingsListItemLabel {
+    color: #333;
+    float: left;
+    font-size: 12px;
+    width: 165px;
+}
+.pls {
+    padding-left: 5px;
+}
+#contentCol .fbSettingsList .fbSettingsListItemContent {
+    color: #65676b;
+    font-size: 15px;
+    letter-spacing: -0.24px;
+    line-height: 20px;
+    margin-right: 5%;
+}
+.CometSettingsPage .fbSettingsListItemLabeled .fbSettingsListItemContent {
+    margin-left: 200px;
+}
+.fbSettingsListItemLabeled .fbSettingsListItemContent {
+    margin-left: 175px;
+    padding-left: 0;
+}
+.fbSettingsList .fbSettingsListItemContent {
+    display: block;
+    padding-left: 5px;
+}
+.fcg {
+    color: #90949c;
+}
+
+.nsn h5 {
+    text-align: center;
+}
