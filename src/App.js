@@ -12,6 +12,7 @@ import Zeynep from "./Pages/Zeynep";
 import Profil from "./Pages/profile";
 import Login from "./Pages/Login";
 import SigIn from "./Pages/SignIn";
+import AddNote from "./Pages/AddNotes";
 
 import sessionWrapperHOC from './components/SessionWrapperHOC';
 import Navbar from "./components/Navbar";
@@ -39,6 +40,7 @@ const Root = ({ session }) => (
         <Route exact path='/Hakkımızda'  render={ () => <Hakkımız  />} />
         <Route exact path='/Zeynep'  render={ () => <Zeynep  />} />
         <Route exact path='/Profil'  render={ () => <Profil session={session} />} />
+        <Route exact path='/Notekle'  render={ () => <AddNote session={session} />} />
         <Route exact path='/Kaydol' render={ () => <SigIn /> } />
         <Route exact path='/Giris'  render={ () => <Login /> } />
         <PageNotFound />
