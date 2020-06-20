@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
-import { SıgınUser } from "../queries/index";
+import { SıgınUser, GET_USER } from "../queries/index";
 import { useHistory } from "react-router";
 import { Link } from 'react-router-dom';
 import '../Style/Login.css';
@@ -13,8 +13,9 @@ const Login = () =>  {
   const onSubmit = e => {
     e.preventDefault();
     signIn({
-      variables: { UserName, password }
-    }).then( ({ data }) => {
+      variables: { UserName, password },
+      refetchQueries: { query: GET_USER }
+    }).then(({ data }) => {
       localStorage.setItem('token', data.signIn.token);
       history.push('/');
       window.location.reload(); //sayfayı yenileyip activeUser's datasını alıyoruz

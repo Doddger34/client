@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 
 import { useMutation } from "@apollo/client";
-import { CreateNot } from "../queries/index";
+import { CreateNot, GET_USER } from "../queries/index";
 import '../Style/AddNote.css';
 import ListLesson from '../components/ListLesson';
 import { useHistory } from "react-router";
 import auth from "../components/auth";
 
 // GetLesson function değilde mutation içine yazmaya çılış;
-const AddNot = ({session}) => {
+const AddNot = ({ session }) => {
   const [createNot, { loading, error }] = useMutation(CreateNot);
   const [userId, SetUserId] = useState("");
   const [lessonId, SetlessonId] = useState("");
@@ -23,10 +23,10 @@ const AddNot = ({session}) => {
   const onSubmit = e => {
     e.preventDefault();
     createNot({
-      variables: { userId, Link, Name, lessonId } 
+      variables: { userId, Link, Name, lessonId },
+      refetchQueries: { query: GET_USER } //notlar sayfasına notun gitmesi
     }).then(() => {
       history.push('/Notlar');
-      window.location.reload();
     })
   }
   if(error) return <div>Ders yüklenemedi...</div>;

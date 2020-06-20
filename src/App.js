@@ -25,7 +25,7 @@ import {
 } from "react-router-dom";
 import PageNotFound from './Pages/404page';
 
-const Root = ({ session }) => (
+const Root = ({ session, refetch }) => (
   <Router>
     <Fragment>
       <Navbar session={session} />
@@ -39,8 +39,8 @@ const Root = ({ session }) => (
         <Route exact path='/Fizik'  render={ () => <Fizik  />} />
         <Route exact path='/Hakkımızda'  render={ () => <Hakkımız  />} />
         <Route exact path='/Zeynep'  render={ () => <Zeynep  />} />
-        <Route exact path='/Profil'  render={ () => <Profil session={session} />} />
-        <Route exact path='/Notekle'  render={ () => <AddNote session={session} />} />
+        <Route exact path='/Profil'  render={ () => <Profil session={session} refetch={refetch} />} />
+        <Route exact path='/Notekle'  render={ () => <AddNote session={session}  />} />
         <Route exact path='/Kaydol' render={ () => <SigIn /> } />
         <Route exact path='/Giris'  render={ () => <Login /> } />
         <PageNotFound />
