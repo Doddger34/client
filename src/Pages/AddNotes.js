@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { useMutation } from "@apollo/client";
-import { CreateNot, GET_USER } from "../queries/index";
+import { CreateNot, GetNotesQuery } from "../queries/index";
 import '../Style/AddNote.css';
 import ListLesson from '../components/ListLesson';
 import { useHistory } from "react-router";
@@ -24,7 +24,7 @@ const AddNot = ({ session }) => {
     e.preventDefault();
     createNot({
       variables: { userId, Link, Name, lessonId },
-      refetchQueries: { query: GET_USER } //notlar sayfasına notun gitmesi
+      refetchQueries: { query: GetNotesQuery } //notlar sayfasına notun gitmesi
     }).then(() => {
       history.push('/Notlar');
     })
