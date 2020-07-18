@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../Style/Footer.css";
 class Footer extends Component {
-  Click = () => {
-    window.alert("Daha Gelmedi Güzel İnsan...");
-   };
-  render() {
+   render() {
     return (
       <footer className="page-footer font-small stylish-color-dark pt-4 F_footer">
         <div className="container text-center text-md-left">
