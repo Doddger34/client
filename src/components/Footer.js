@@ -4,7 +4,7 @@ import "../Style/Footer.css";
 class Footer extends Component {
   Click = () => {
     window.alert("Daha Gelmedi Güzel İnsan...");
-  };
+   };
   render() {
     return (
       <footer className="page-footer font-small stylish-color-dark pt-4 F_footer">
@@ -13,7 +13,7 @@ class Footer extends Component {
             <div className="col-md-4 mx-auto">
               <h5 className="font-weight-bold text-uppercase mt-3 mb-4 "></h5>
               <p>
-                Notcu.com olarak öğrencilerin sınav notlarını yükseltmek için
+                Notlarm.com olarak öğrencilerin sınav notlarını yükseltmek için
                 öğreniclerin kendi elleri ile yazmış oluduğu notları sizin
                 huzurunuza sunmak için elimizden geleni yapıyoruz.
               </p>
