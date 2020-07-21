@@ -7,12 +7,6 @@ class LinksWithLogin extends Component {
     const session = this.props.session;
     return (
       <div className="c_header__right-profile mr-2  mt-1">
-        {
-          session.activeUser.role === "Admin" &&
-            <NavLink to="/DersEkle" className="c_header__profile-link mr-2" >
-              Ders Ekle
-            </NavLink>
-        }
         <NavLink to="/Notekle" className="c_header__profile-link mr-2">
           Not Ekle
         </NavLink>
@@ -24,6 +18,7 @@ class LinksWithLogin extends Component {
     );
   }
 }
+
 
 class LinksWithUnLogin extends Component {
   render() {
@@ -76,6 +71,7 @@ class Navbar extends Component {
   };
   render() {
     const session = this.props.session;
+    console.log(session);
     const isVisible = this.state.isVisible;
     return (
       <div className="c_header " id="sidebar">
@@ -212,14 +208,6 @@ class Navbar extends Component {
                             Not Ekle
                           </NavLink>  
                         </li>:null
-                      }
-                      {
-                        session.activeUser.role === "Admin" &&
-                          <li className="menu__link menu__link-temporary-spacing">
-                            <NavLink to="/DersEkle" className="c_header__profile-link mr-2" >
-                              Ders Ekle
-                            </NavLink>
-                          </li>
                       }
                       <li className="menu__link menu__link-temporary-spacing">
                         <NavLink

@@ -24,6 +24,7 @@ const UserNotes = () => {
             Name={Not.Name}
             Link={Not.Link}
             Ders={Not.Lesson.Name}
+            UserName= { data.User.UserName }
           />
         ))
       )}
