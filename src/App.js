@@ -30,7 +30,7 @@ const Root = ({ session, refetch }) => (
     <Fragment>
       <Navbar session={session} />
       <Switch>
-        <Route exact path='/'  render={ () => <Home />} />
+        <Route exact path='/'  render={ () => <Home session={session} />} />
         <Route exact path='/Dersler'  render={ () => <Dersler session={session} />} />
         <Route exact path='/Notlar'  render={ () => <Notlar  />} />
         <Route exact path='/Biyoloji'  render={ () => <Biyoloji  />}/>

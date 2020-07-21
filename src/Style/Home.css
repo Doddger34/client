@@ -1,0 +1,43 @@
+h5{
+    max-width: 60rem;
+}
+.welcome-tittle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.udlite-heading-xxl {
+    font-family: 'SF Pro Display',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02rem;
+    font-size: 2.2rem;
+}
+.my-learning-unit--title--3Oy5V {
+    margin-top: 1.5rem;
+    color: #3c3b37;
+    margin-bottom: .8rem;
+}
+.udlite-container {
+    width: 100%;
+    max-width: 134rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+}
+.left{
+    margin-bottom:1rem ;
+}
+.home-left{
+    border-left: 1px solid #a7a7a7;
+}
+@media screen and (max-width: 991px){
+    .home-left{
+        padding-top:24px ;
+        border-top: 1px solid #a7a7a7;
+        border-left: none;
+    }
+    
+}
