@@ -9,6 +9,11 @@ export const GetNotesQuery = gql`
       Lesson {
         Name
       }
+      User {
+        id
+        UserName
+        email
+      }
     }
   }
 `;

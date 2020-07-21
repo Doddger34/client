@@ -10,6 +10,7 @@ class Nt_Card extends Component {
         <div className="card-body">
           <h4 className="card-title">{this.props.Name}</h4>
           <div className="ml-1">{this.props.Ders}</div>
+          <div className="ml-1">Paylaşan: {this.props.UserName} </div>
           <a href={this.props.Link} target="_blank" className="btn btn-quaternary mt-2 ">
             Not
           </a>
