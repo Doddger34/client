@@ -213,6 +213,14 @@ class Navbar extends Component {
                           </NavLink>  
                         </li>:null
                       }
+                      {
+                        session.activeUser.role === "Admin" &&
+                          <li className="menu__link menu__link-temporary-spacing">
+                            <NavLink to="/DersEkle" className="c_header__profile-link mr-2" >
+                              Ders Ekle
+                            </NavLink>
+                          </li>
+                      }
                       <li className="menu__link menu__link-temporary-spacing">
                         <NavLink
                           to="/Hakkımızda"
