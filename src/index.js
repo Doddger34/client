@@ -13,7 +13,7 @@ import fetch from "cross-fetch";
 import { setContext } from 'apollo-link-context';
 
 const httpLink = createHttpLink({
-  uri: "https://shrouded-lowlands-63243.herokuapp.com/graphql",
+  uri: "http://localhost:3009/graphql",
   fetch,
 });
 

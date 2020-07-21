@@ -87,7 +87,7 @@ const profile = ({ session: { activeUser } }) => {
             </div>
           </div>
         </div>
-        <UserNotes  />
+        
       </div>
     </div>
   );

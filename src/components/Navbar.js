@@ -2,55 +2,53 @@ import React, { Component, Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import "../Style/header.css";
 import Logout from "./Logout";
-class LinksWithLogin extends Component {
-  render() {
-    const session = this.props.session;
-    return (
-      <div className="c_header__right-profile mr-2  mt-1">
-        <NavLink to="/Notekle" className="c_header__profile-link mr-2">Not Ekle</NavLink>
-        <NavLink to="/profil" className="c_header__profile-link  ">
-          {session.activeUser.UserName}
-        </NavLink>
-        <Logout />
-      </div>
-    );
-  }
+
+const LinksWithLogin = () => {
+  const session = this.props.session;
+  return (
+    <div className="c_header__right-profile mr-2  mt-1">
+      <NavLink to="/Notekle" className="c_header__profile-link mr-2">Not Ekle</NavLink>
+      <NavLink to="/profil" className="c_header__profile-link  ">
+        {session.activeUser.UserName}
+      </NavLink>
+      <Logout />
+    </div>
+  );
+  
 }
 
-class LinksWithUnLogin extends Component {
-  render() {
-    return (
-      <Fragment>
-        <div className="dropdown dropdown--login ud-component--header-v6--login-button hidden-xs hidden-xxs">
-          <div>
-            <NavLink
-              to="/Giris"
-              data-purpose="header-login"
-              type="button"
-              className="btn btn-quaternary"
-            >
-              Oturum Aç
-            </NavLink>
-          </div>
+const LinksWithUnLogin = () => {
+  return (
+    <Fragment>
+      <div className="dropdown dropdown--login ud-component--header-v6--login-button hidden-xs hidden-xxs">
+        <div>
+          <NavLink
+            to="/Giris"
+            data-purpose="header-login"
+            type="button"
+            className="btn btn-quaternary"
+          >
+            Oturum Aç
+          </NavLink>
         </div>
-        <div
-          className="button dropdown dropdown--signup ud-component--header-v6--signup-button hidden-xs hidden-xxs"
-          ng-non-bindable=""
-        >
-          <div>
-            <NavLink
-              to="/Kaydol"
-              data-purpose="header-signup"
-              type="button"
-              className="btn btn-primary"
-            >
-              Kaydol
-            </NavLink>
-          </div>
+      </div>
+      <div
+        className="button dropdown dropdown--signup ud-component--header-v6--signup-button hidden-xs hidden-xxs"
+        ng-non-bindable=""
+      >
+        <div>
+          <NavLink
+            to="/Kaydol"
+            data-purpose="header-signup"
+            type="button"
+            className="btn btn-primary"
+          >
+            Kaydol
+          </NavLink>
         </div>
-      </Fragment>
-    );
-  }
+      </div>
+    </Fragment>
+  );
 }
 class Navbar extends Component {
   state = {
