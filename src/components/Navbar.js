@@ -3,18 +3,21 @@ import { NavLink } from "react-router-dom";
 import "../Style/header.css";
 import Logout from "./Logout";
 
-const LinksWithLogin = () => {
-  const session = this.props.session;
-  return (
-    <div className="c_header__right-profile mr-2  mt-1">
-      <NavLink to="/Notekle" className="c_header__profile-link mr-2">Not Ekle</NavLink>
-      <NavLink to="/profil" className="c_header__profile-link  ">
-        {session.activeUser.UserName}
-      </NavLink>
-      <Logout />
-    </div>
-  );
-  
+class LinksWithLogin extends Component {
+  render() {
+    const session = this.props.session;
+    return (
+      <div className="c_header__right-profile mr-2  mt-1">
+        <NavLink to="/Notekle" className="c_header__profile-link mr-2">
+          Not Ekle
+        </NavLink>
+        <NavLink to="/profil" className="c_header__profile-link  ">
+          {session.activeUser.UserName}
+        </NavLink>
+        <Logout />
+      </div>
+    );
+  }
 }
 
 const LinksWithUnLogin = () => {
@@ -49,7 +52,7 @@ const LinksWithUnLogin = () => {
       </div>
     </Fragment>
   );
-}
+};
 class Navbar extends Component {
   state = {
     isVisible: false,
@@ -171,7 +174,8 @@ class Navbar extends Component {
                           </NavLink>
                         </li>
                       </ul>
-                    )}<hr/>
+                    )}
+                    <hr />
                     <ul className="pb-space-sm">
                       <li className="menu__link menu__link-temporary-spacing">
                         <NavLink
@@ -192,17 +196,17 @@ class Navbar extends Component {
                           Notlar
                         </NavLink>
                       </li>
-                      {
-                        session.activeUser ? <li className="menu__link menu__link-temporary-spacing">
+                      {session.activeUser ? (
+                        <li className="menu__link menu__link-temporary-spacing">
                           <NavLink
                             to="/Notekle"
                             className="c_header__left-link"
                             tabIndex="0"
                           >
                             Not Ekle
-                          </NavLink>  
-                        </li>:null
-                      }
+                          </NavLink>
+                        </li>
+                      ) : null}
                       <li className="menu__link menu__link-temporary-spacing">
                         <NavLink
                           to="/Hakkımızda"
