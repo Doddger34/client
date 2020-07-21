@@ -92,7 +92,9 @@ export const GetPhysicsNotesQuery = gql`
 
 export const CreateNot = gql`
   mutation($Name: String!, $Link: String!, $lessonId: ID!, $userId: ID!) {
-    createNot(data: { Name: $Name, Link: $Link, lessonId: $lessonId, userId: $userId }) {
+    createNot(
+      data: { Name: $Name, Link: $Link, lessonId: $lessonId, userId: $userId }
+    ) {
       Name
     }
   }
@@ -137,6 +139,8 @@ export const GET_USER = gql`
           Name
         }
       }
+      Block
+      role
     }
   }
 `;

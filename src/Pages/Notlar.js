@@ -8,7 +8,6 @@ import "../Style/Notes.css";
 
 const Notlar = () => {
   const { loading, data, error } = useQuery(GetNotesQuery);
-  console.log(data);
   if (loading) return <p style={{textAlign:'center'}}>Loading...</p>;
   if (error) return <p style={{textAlign:'center'}}>Error...</p>;
   return(

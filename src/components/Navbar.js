@@ -7,6 +7,12 @@ class LinksWithLogin extends Component {
     const session = this.props.session;
     return (
       <div className="c_header__right-profile mr-2  mt-1">
+        {
+          session.activeUser.role === "Admin" &&
+            <NavLink to="/DersEkle" className="c_header__profile-link mr-2" >
+              Ders Ekle
+            </NavLink>
+        }
         <NavLink to="/Notekle" className="c_header__profile-link mr-2">
           Not Ekle
         </NavLink>
