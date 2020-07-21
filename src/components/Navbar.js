@@ -2,7 +2,6 @@ import React, { Component, Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import "../Style/header.css";
 import Logout from "./Logout";
-
 class LinksWithLogin extends Component {
   render() {
     const session = this.props.session;
@@ -20,39 +19,41 @@ class LinksWithLogin extends Component {
   }
 }
 
-const LinksWithUnLogin = () => {
-  return (
-    <Fragment>
-      <div className="dropdown dropdown--login ud-component--header-v6--login-button hidden-xs hidden-xxs">
-        <div>
-          <NavLink
-            to="/Giris"
-            data-purpose="header-login"
-            type="button"
-            className="btn btn-quaternary"
-          >
-            Oturum Aç
-          </NavLink>
+class LinksWithUnLogin extends Component {
+  render() {
+    return (
+      <Fragment>
+        <div className="dropdown dropdown--login ud-component--header-v6--login-button hidden-xs hidden-xxs">
+          <div>
+            <NavLink
+              to="/Giris"
+              data-purpose="header-login"
+              type="button"
+              className="btn btn-quaternary"
+            >
+              Oturum Aç
+            </NavLink>
+          </div>
         </div>
-      </div>
-      <div
-        className="button dropdown dropdown--signup ud-component--header-v6--signup-button hidden-xs hidden-xxs"
-        ng-non-bindable=""
-      >
-        <div>
-          <NavLink
-            to="/Kaydol"
-            data-purpose="header-signup"
-            type="button"
-            className="btn btn-primary"
-          >
-            Kaydol
-          </NavLink>
+        <div
+          className="button dropdown dropdown--signup ud-component--header-v6--signup-button hidden-xs hidden-xxs"
+          ng-non-bindable=""
+        >
+          <div>
+            <NavLink
+              to="/Kaydol"
+              data-purpose="header-signup"
+              type="button"
+              className="btn btn-primary"
+            >
+              Kaydol
+            </NavLink>
+          </div>
         </div>
-      </div>
-    </Fragment>
-  );
-};
+      </Fragment>
+    );
+  }
+}
 class Navbar extends Component {
   state = {
     isVisible: false,
@@ -174,8 +175,7 @@ class Navbar extends Component {
                           </NavLink>
                         </li>
                       </ul>
-                    )}
-                    <hr />
+                    )}<hr/>
                     <ul className="pb-space-sm">
                       <li className="menu__link menu__link-temporary-spacing">
                         <NavLink
@@ -196,17 +196,17 @@ class Navbar extends Component {
                           Notlar
                         </NavLink>
                       </li>
-                      {session.activeUser ? (
-                        <li className="menu__link menu__link-temporary-spacing">
+                      {
+                        session.activeUser ? <li className="menu__link menu__link-temporary-spacing">
                           <NavLink
                             to="/Notekle"
                             className="c_header__left-link"
                             tabIndex="0"
                           >
                             Not Ekle
-                          </NavLink>
-                        </li>
-                      ) : null}
+                          </NavLink>  
+                        </li>:null
+                      }
                       <li className="menu__link menu__link-temporary-spacing">
                         <NavLink
                           to="/Hakkımızda"

@@ -132,7 +132,6 @@ export const GET_USER = gql`
           Name
         }
       }
-      Block
     }
   }
 `;

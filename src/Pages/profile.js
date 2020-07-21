@@ -10,7 +10,7 @@ const UserNotes = () => {
   useEffect( () => {
     refetch();
     return () => null
-  }, [])
+  })
   return(
     <div>
       {data.activeUser.Not.length <= 0 ? (
@@ -84,6 +84,7 @@ const profile = ({ session: { activeUser } }) => {
                   Kullanıcının Paylaştığı Notlar
                 </h2>
               </div>
+              <UserNotes />
             </div>
           </div>
         </div>
