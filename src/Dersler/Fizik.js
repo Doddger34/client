@@ -21,6 +21,7 @@ const Fizik = () => {
                             Name = { dat.Name }
                             Link = { dat.Link }
                             Ders = { dat.Lesson.Name }
+                            UserName = { dat.User.UserName }
                         />
                     )
                 })
