@@ -12,14 +12,15 @@ const Biyoloji = () => {
       <div className="N_Tittle">
         <span>Biyoloji</span>
       </div>
-      {data.Lesson.Not.map((dat) => {
+      {data.Lesson.Not.map( dat => {
         return (
           <NCard
-            key={dat.id}
-            Name={dat.Name}
-            Link={dat.Link}
-            Ders={dat.Lesson.Name}
-            UserName={dat.User.UserName}
+            key = {dat.id}
+            Name = {dat.Name}
+            Link = {dat.Link}
+            Ders = {dat.Lesson.Name}
+            UserName = {dat.User.UserName}
+            Class = { dat.Class.ClassName }
           />
         );
       })}

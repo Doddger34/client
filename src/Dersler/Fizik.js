@@ -14,7 +14,7 @@ const Fizik = () => {
                 <span>Fizik</span>
             </div>
             {
-                data.Lesson.Not.map(dat => {
+                data.Lesson.Not.map( dat => {
                     return(
                         <NCard 
                             key = { dat.id }
@@ -22,6 +22,7 @@ const Fizik = () => {
                             Link = { dat.Link }
                             Ders = { dat.Lesson.Name }
                             UserName = { dat.User.UserName }
+                            Class = { dat.Class.ClassName }
                         />
                     )
                 })

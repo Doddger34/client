@@ -15,7 +15,7 @@ const UserNotes = () => {
     <div>
       {data.activeUser.Not.length <= 0 ? (
         <div className="nsn">
-          <h5>Not paylaşılmamış...</h5>
+          Not paylaşılmamış...
         </div>
       ) : (
         data.activeUser.Not.map((Not) => (
@@ -25,6 +25,7 @@ const UserNotes = () => {
             Link={Not.Link}
             Ders={Not.Lesson.Name}
             UserName= { data.User.UserName }
+            Class = { data.Class.ClassName }
           />
         ))
       )}

@@ -21,6 +21,7 @@ const Notlar = () => {
                   Link = { data.Link }
                   Ders = { data.Lesson.Name }
                   UserName= { data.User.UserName }
+                  Class = { data.Class.ClassName }
                 />
             )
         })

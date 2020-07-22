@@ -14,6 +14,10 @@ export const GetNotesQuery = gql`
         UserName
         email
       }
+      Class{
+        id
+        ClassName
+      }
     }
   }
 `;
@@ -34,13 +38,17 @@ export const GetMathNotesQuery = gql`
         id
         Name
         Link
-        Lesson {
+        Lesson{
           Name
         }
         User {
           id
           UserName
           email
+        }
+        Class{
+          id
+          ClassName
         }
       }
     }
@@ -55,13 +63,17 @@ export const GetLiteratureesQuery = gql`
         id
         Name
         Link
-        Lesson {
+        Lesson{
           Name
         }
         User {
           id
           UserName
           email
+        }
+        Class{
+          id
+          ClassName
         }
       }
     }
@@ -76,13 +88,17 @@ export const GetBiologyNotesQuery = gql`
         id
         Name
         Link
-        Lesson {
+        Lesson{
           Name
         }
         User {
           id
           UserName
           email
+        }
+        Class{
+          id
+          ClassName
         }
       }
     }
@@ -91,33 +107,60 @@ export const GetBiologyNotesQuery = gql`
 
 export const GetPhysicsNotesQuery = gql`
   query {
-    Lesson(id: "5ebc688f4f741a2df89f7a84") {
+  Lesson(id: "5ebc688f4f741a2df89f7a84") {
+    Name
+    Not {
+      id
       Name
-      Not {
-        id
+      Link
+      Lesson{
         Name
-        Link
-        Lesson {
-          Name
-        }
-        User {
-          id
-          UserName
-          email
-        }
       }
+      User {
+        id
+        UserName
+        email
+      }
+      Class{
+        id
+        ClassName
+      }
+    }
+  }
+}
+
+`;
+
+export const GetClass = gql`
+  query {
+    Classes{
+      id
+      ClassName
     }
   }
 `;
 
 export const CreateNot = gql`
-  mutation($Name: String!, $Link: String!, $lessonId: ID!, $userId: ID!) {
-    createNot(
-      data: { Name: $Name, Link: $Link, lessonId: $lessonId, userId: $userId }
-    ) {
-      Name
+  mutation(
+  $Name: String!
+  $Link: String!
+  $lessonId: ID!
+  $userId: ID!
+  $classId: ID!
+) {
+  createNot(
+    data: {
+      Name: $Name
+      Link: $Link
+      lessonId: $lessonId
+      userId: $userId
+      classId: $classId
     }
+  ) {
+    Name
   }
+}
+
 `;
 export const CreateLesson = gql`
   mutation($Name: String!) {

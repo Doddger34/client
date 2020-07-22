@@ -4,6 +4,7 @@ import { useMutation } from "@apollo/client";
 import { CreateNot, GetNotesQuery } from "../queries/index";
 import '../Style/AddNote.css';
 import ListLesson from '../components/ListLesson';
+import ListClass from '../components/ListClass';
 import { useHistory } from "react-router";
 import auth from "../components/auth";
 
@@ -12,6 +13,7 @@ const AddNot = ({ session }) => {
   const [createNot, { loading, error }] = useMutation(CreateNot);
   const [userId, SetUserId] = useState("");
   const [lessonId, SetlessonId] = useState("");
+  const [ClassId, SetClassId] = useState("");
   const [Link, SetLink] = useState("");
   const [Name, SetName] = useState("");
   let history = useHistory();
@@ -23,7 +25,7 @@ const AddNot = ({ session }) => {
   const onSubmit = e => {
     e.preventDefault();
     createNot({
-      variables: { userId, Link, Name, lessonId },
+      variables: { userId, Link, Name, lessonId, classId: ClassId },
       refetchQueries: { query: GetNotesQuery } //notlar sayfasına notun gitmesi
     }).then(() => {
       history.push('/Notlar');
@@ -47,6 +49,7 @@ const AddNot = ({ session }) => {
               />
             </div>
            <ListLesson lessonId={lessonId} SetlessonId={SetlessonId} />
+           <ListClass ClassId={ClassId} SetClassId={SetClassId} />
           </div>
           <div className="col-md-6">
             <div className="form-group mt-3">

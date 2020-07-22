@@ -13,14 +13,15 @@ const Matematik = () => {
         <span>Matematik</span>
       </div>
       {
-        data.Lesson.Not.map((dat) => {
+        data.Lesson.Not.map( dat => {
         return (
           <NCard
-            key={dat.id}
-            Name={dat.Name}
-            Link={dat.Link}
-            Ders={dat.Lesson.Name}
+            key = {dat.id}
+            Name = {dat.Name}
+            Link = {dat.Link}
+            Ders = {dat.Lesson.Name}
             UserName = { dat.User.UserName }
+            Class = { dat.Class.ClassName }
           />
         );
       })

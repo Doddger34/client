@@ -71,7 +71,6 @@ class Navbar extends Component {
   };
   render() {
     const session = this.props.session;
-    console.log(session);
     const isVisible = this.state.isVisible;
     return (
       <div className="c_header " id="sidebar">

@@ -9,7 +9,7 @@ const ListLesson = ({ lessonId, SetlessonId }) => {
     if (error) return <div>Hata</div>;
     return(
         <select className="form-control select" onChange={e => SetlessonId(e.target.value)} >
-            <option selected disabled={true}  >Ders Seçin</option>
+            <option selected disabled={true} >Ders Seçin</option>
             {
                 data.Lessons.map(data => (
                     <option key={data.id} value={data.id}  >
