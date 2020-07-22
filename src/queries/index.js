@@ -37,6 +37,11 @@ export const GetMathNotesQuery = gql`
         Lesson {
           Name
         }
+        User {
+          id
+          UserName
+          email
+        }
       }
     }
   }
@@ -52,6 +57,11 @@ export const GetLiteratureesQuery = gql`
         Link
         Lesson {
           Name
+        }
+        User {
+          id
+          UserName
+          email
         }
       }
     }
@@ -69,6 +79,11 @@ export const GetBiologyNotesQuery = gql`
         Lesson {
           Name
         }
+        User {
+          id
+          UserName
+          email
+        }
       }
     }
   }
@@ -84,6 +99,11 @@ export const GetPhysicsNotesQuery = gql`
         Link
         Lesson {
           Name
+        }
+        User {
+          id
+          UserName
+          email
         }
       }
     }

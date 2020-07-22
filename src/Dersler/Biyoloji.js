@@ -1,17 +1,30 @@
-import React, { Component } from "react";
-import Biy from "../components/Ders/Biyoloji";
+import React from "react";
+import NCard from "../component/Nt_Card";
+import { useQuery } from "@apollo/client";
+import { GetBiologyNotesQuery } from "../queries/index";
 
-class Biyoloji extends Component {
-  render() {
-    return (
-      <div>
-        <div className="N_Tittle">
-          <span>Biyoloji</span>
-        </div>
-        <Biy />
+const Biyoloji = () => {
+  const { loading, data, error } = useQuery(GetBiologyNotesQuery);
+  if (loading) return <p style={{ textAlign: "center" }}>Loading...</p>;
+  if (error) return <p style={{ textAlign: "center" }}>Error...</p>;
+  return (
+    <div>
+      <div className="N_Tittle">
+        <span>Biyoloji</span>
       </div>
-    );
-  }
-}
+      {data.Lesson.Not.map((dat) => {
+        return (
+          <NCard
+            key={dat.id}
+            Name={dat.Name}
+            Link={dat.Link}
+            Ders={dat.Lesson.Name}
+            UserName={dat.User.UserName}
+          />
+        );
+      })}
+    </div>
+  );
+};
 
 export default Biyoloji;
