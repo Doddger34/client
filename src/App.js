@@ -8,7 +8,6 @@ import Edebiyat from "./Dersler/Edebiyat";
 import Fizik from "./Dersler/Fizik";
 import Matematik from "./Dersler/Matematik";
 import Hakkımız from "./Pages/Hakkımız";
-import Zeynep from "./Pages/Zeynep";
 import Profil from "./Pages/profile";
 import Login from "./Pages/Login";
 import SigIn from "./Pages/SignIn";
@@ -38,7 +37,6 @@ const Root = ({ session, refetch }) => (
         <Route exact path='/Matematik'  render={ () => <Matematik  />}/>
         <Route exact path='/Fizik'  render={ () => <Fizik  />} />
         <Route exact path='/Hakkımızda'  render={ () => <Hakkımız  />} />
-        <Route exact path='/Zeynep'  render={ () => <Zeynep  />} />
         <Route exact path='/Profil'  render={ () => <Profil session={session} refetch={refetch} />} />
         <Route exact path='/Notekle'  render={ () => <AddNote session={session}  />} />
         <Route exact path='/Kaydol' render={ () => <SigIn /> } />
