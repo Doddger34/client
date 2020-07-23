@@ -3,7 +3,7 @@ import { ApolloConsumer } from "@apollo/client";
 import { useHistory } from "react-router";
 
 const onClick = (history, client) => {
-  localStorage.setItem("token", "");
+  sessionStorage.setItem("token", "");
   history.push("/");
   client.resetStore();
 };

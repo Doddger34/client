@@ -57,21 +57,24 @@ export const GetMathNotesQuery = gql`
 
 export const GetEnglishQuery = gql`
   query {
-  Lesson(id: "5f19c2506cc3d5f4499175d9") {
-      Name
-      Not {
-        id
+    Lesson(id: "5f19d1366cc3d5f4499175db") {
         Name
-        Link
-        User {
+        Not {
           id
-          UserName
-          email
+          Name
+          Link
+          Lesson{
+            Name
+          }
+          User {
+            id
+            UserName
+            email
+          }
+          Class{ClassName}
         }
-        Class{ClassName}
       }
-    }
-}
+  }
 `;
 
 export const GetLiteratureesQuery = gql`

@@ -16,7 +16,7 @@ const Login = () =>  {
       variables: { UserName, password },
       refetchQueries: { query: GET_USER }
     }).then(({ data }) => {
-      localStorage.setItem('token', data.signIn.token);
+      sessionStorage.setItem('token', data.signIn.token);
       history.push('/');
       window.location.reload(); //sayfayı yenileyip activeUser's datasını alıyoruz
     });

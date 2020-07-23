@@ -17,7 +17,7 @@ const SignIn = () => {
     createUser({
       variables: { UserName: UserName, password: password, email: email },
     }).then(async ({ data }) => {
-      localStorage.setItem("token", data.createUser.token);
+      sessionStorage.setItem("token", data.createUser.token);
       history.push("/");
       window.location.reload(); //sayfayı yenileyip activeUser's datasını alıyoruz
     });

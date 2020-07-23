@@ -12,7 +12,8 @@ const Edebiyat = () => {
       <div className="N_Tittle">
         <span>Edebiyat</span>
       </div>
-      {data.Lesson.Not.map( dat => {
+      {
+        data.Lesson.Not.map( dat => {
         return (
           <NCard
             key={dat.id}
