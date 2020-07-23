@@ -24,7 +24,7 @@ const Home = ({ session }) => {
               Öğrencilerin kendi notlarını pdf halinde ulaşacağınız tek nokta.
               Oturum açıp kendi notunuzu{" "}
               <Link to="Notekle">paylaşabilirsiniz</Link>. İster başkalarının
-              notlarına <Link to="Notlar">göz gezdireblirisiniz</Link>.
+              notlarına <Link to="Notlar">göz gezdirebilirsiniz</Link>.
             </p>
           </div>
           <div className="col-md-7 col-lg-5  home-left right">
