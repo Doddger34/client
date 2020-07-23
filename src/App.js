@@ -5,6 +5,7 @@ import Dersler from "./Pages/Dersler";
 import Notlar from "./Pages/Notlar";
 import Biyoloji from "./Dersler/Biyoloji";
 import Edebiyat from "./Dersler/Edebiyat";
+import İnglizce from "./Dersler/İnglizce";
 import Fizik from "./Dersler/Fizik";
 import Matematik from "./Dersler/Matematik";
 import Hakkımız from "./Pages/Hakkımız";
@@ -34,6 +35,7 @@ const Root = ({ session, refetch }) => (
         <Route exact path='/Notlar'  render={ () => <Notlar  />} />
         <Route exact path='/Biyoloji'  render={ () => <Biyoloji  />}/>
         <Route exact path='/Edebiyat'  render={ () => <Edebiyat  />} />
+        <Route exact path='/İnglizce'  render={ () => <İnglizce  />} />
         <Route exact path='/Matematik'  render={ () => <Matematik  />}/>
         <Route exact path='/Fizik'  render={ () => <Fizik  />} />
         <Route exact path='/Hakkımızda'  render={ () => <Hakkımız  />} />

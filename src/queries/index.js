@@ -55,6 +55,25 @@ export const GetMathNotesQuery = gql`
   }
 `;
 
+export const GetEnglishQuery = gql`
+  query {
+  Lesson(id: "5f19c2506cc3d5f4499175d9") {
+      Name
+      Not {
+        id
+        Name
+        Link
+        User {
+          id
+          UserName
+          email
+        }
+        Class{ClassName}
+      }
+    }
+}
+`;
+
 export const GetLiteratureesQuery = gql`
   query {
     Lesson(id: "5ecd57f47a49582a10d12d34") {
