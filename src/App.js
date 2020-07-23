@@ -35,7 +35,7 @@ const Root = ({ session, refetch }) => (
         <Route exact path='/Notlar'  render={ () => <Notlar  />} />
         <Route exact path='/Biyoloji'  render={ () => <Biyoloji  />}/>
         <Route exact path='/Edebiyat'  render={ () => <Edebiyat  />} />
-        <Route exact path='/İnglizce'  render={ () => <İnglizce  />} />
+        <Route exact path='/İngilizce'  render={ () => <İnglizce  />} />
         <Route exact path='/Matematik'  render={ () => <Matematik  />}/>
         <Route exact path='/Fizik'  render={ () => <Fizik  />} />
         <Route exact path='/Hakkımızda'  render={ () => <Hakkımız  />} />
