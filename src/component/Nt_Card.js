@@ -12,7 +12,7 @@ class Nt_Card extends Component {
           <div className="ml-1">{this.props.Ders}</div>
           <div className="ml-1">Sınıf: {this.props.Class}</div>
           <div className="ml-1">Paylaşan: {this.props.UserName} </div>
-          <a href={this.props.Link} target="_blank" className="btn btn-quaternary mt-2 ">
+          <a href={this.props.Link} target="_blank" rel="noopener noreferrer" className="btn btn-quaternary mt-2 ">
             Not
           </a>
         </div>

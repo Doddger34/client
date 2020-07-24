@@ -21,7 +21,7 @@ const AddNot = ({ session }) => {
     if (session && session.activeUser) {
       SetUserId(session.activeUser.id);
     }
-  },[]);
+  },[session]);
   const onSubmit = e => {
     e.preventDefault();
     createNot({

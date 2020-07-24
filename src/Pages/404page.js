@@ -2,11 +2,11 @@ import React from "react";
 import '../Style/404Page.css';
 const PageNotFound = () => {
   return (
-    <div class="main">
+    <div className="main">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 355">
           <g id="ocean">
-            <path id="sky" class="st0" d="M0 0h1000v203.1H0z" />
+            <path id="sky" className="st0" d="M0 0h1000v203.1H0z" />
             <linearGradient
               id="water_1_"
               gradientUnits="userSpaceOnUse"
@@ -19,7 +19,7 @@ const PageNotFound = () => {
               <stop offset="1" stopColor="#b3dcdf" />
             </linearGradient>
             <path id="water" fill="url(#water_1_)" d="M0 200.7h1000V354H0z" />
-            <path id="land" class="st0" d="M0 273.4h1000V354H0z" />
+            <path id="land" className="st0" d="M0 273.4h1000V354H0z" />
             <g id="bumps">
               <path class="st0" d="M0 275.2s83.8-28 180-28 197 28 197 28H0z" />
               <path

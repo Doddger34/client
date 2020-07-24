@@ -7,16 +7,16 @@ class Footer extends Component {
       <footer className="page-footer font-small stylish-color-dark pt-4 F_footer">
         <div className="container text-center text-md-left">
           <div className="row">
-            <div className="col-md-4 mx-auto">
-              <h5 className="font-weight-bold text-uppercase mt-3 mb-4 "></h5>
+            <div className="col-md-4 mx-auto text-justify">
               <p>
                 Notlarm.com olarak öğrencilerin sınav notlarını yükseltmek için
-                öğreniclerin kendi elleri ile yazmış oluduğu notları sizin
+                öğrencilerin kendi elleri ile yazmış oluduğu notları sizin
                 huzurunuza sunmak için elimizden geleni yapıyoruz.
               </p>
             </div>
 
             <hr className="clearfix w-100 d-md-none" />
+            <button className="clearfix d-md-none btn btn btn-outline-secondary m-auto">Oturum aç / Kaydol</button>  
           </div>
         </div>
         <hr />
