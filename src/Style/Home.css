@@ -1,7 +1,13 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
 h5, h3{
     max-width: 60rem;
 }
-Link {
+a {
     color: #0f7c90;
     text-decoration: none;
 }
@@ -49,27 +55,75 @@ Link {
     border-radius: 5px;
 }
 .component-padding{
-    text-align: center;
-    padding: 48px 24px;
-    background-position: 0 -2.4rem;
+    background: #6e1a52;
     background-size: auto 120%;
+    background-position: 0 -2.4rem;
+    color: #fff;
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.advertising-banner--title--2D50e {
+    margin: 0 0 .8rem;
 }
 .onboarding--title--29uIA {
-    margin-bottom: 1.8rem;
+    margin-bottom: .8rem;
     font-family: sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -.02rem;
-    font-size: 2rem;
+    font-size: 3.2rem;
 }
-
 .u-component-text{
     margin: 0px;
 }
 
 .u-component-button{
+    flex-shrink: 0;
+    font-family: 'SF Pro Display',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02rem;
+    font-size: 1.6rem;
+}
+.u-component-button a {
+    color: #fff;
+    padding: .5rem;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 3px;
+} 
+.onboarding--subtitle--1pGkW {
+    margin-bottom: 1.6rem;
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.6rem;
+}
+.advertising-banner--dark--KftMn .advertising-banner--action-buttons--2MjgS .udlite-btn-secondary {
+    color: #fff;
+    border-color: #fff;
+}
+.udlite-btn-large {
+    height: 4.8rem;
+}
+.udlite-btn {
+    position: relative;
+    align-items: center;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    min-width: 10rem;
+    padding: 0 1.6rem;
+    justify-content: center;
+    user-select: none;
+    vertical-align: bottom;
+}
+.udlite-heading-md {
     font-family: 'SF Pro Display',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
     font-weight: 700;
     line-height: 1.2;

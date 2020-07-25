@@ -5,7 +5,7 @@ import { useQuery } from '@apollo/client';
 import { GetLessonQuery } from '../queries/index';
 
 const Dersler = () => {
-  const { loading, error, data } = useQuery(GetLessonQuery);
+    const { loading, error, data } = useQuery(GetLessonQuery);
     if (loading) return <p style={{textAlign:'center'}}>Loading...</p>;
     if (error) return <p style={{textAlign:'center'}}>Error...</p>;
     return(

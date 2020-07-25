@@ -1,8 +1,10 @@
 import React from "react";
+import HomeUnLogin from '../components/HomeUnLogin';
 
 import "../Style/Home.css";
 import { Link } from "react-router-dom";
 const Home = ({ session }) => {
+  
   return (
     <div>
       <div className="udlite-container container">
@@ -35,6 +37,11 @@ const Home = ({ session }) => {
           </div>
         </div>
       </div>
+        <hr />
+
+      {session.activeUser ? null : (
+        <HomeUnLogin  />
+      )}
     </div>
   );
 };
