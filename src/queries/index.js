@@ -76,6 +76,27 @@ export const GetEnglishQuery = gql`
       }
   }
 `;
+export const GetChemistryQuery = gql`
+  query {
+    Lesson(id: "5f1c386350bec700948a70b0") {
+        Name
+        Not {
+          id
+          Name
+          Link
+          Lesson{
+            Name
+          }
+          User {
+            id
+            UserName
+            email
+          }
+          Class{ClassName}
+        }
+      }
+  }
+`;
 
 export const GetLiteratureesQuery = gql`
   query {
