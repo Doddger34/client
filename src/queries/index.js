@@ -1,4 +1,4 @@
-const { gql } = require("@apollo/client");
+import { gql } from '@apollo/client';
 
 export const GetNotesQuery = gql`
   query {
@@ -6,6 +6,7 @@ export const GetNotesQuery = gql`
       id
       Name
       Link
+      Clicked
       Lesson {
         Name
       }

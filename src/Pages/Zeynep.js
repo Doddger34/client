@@ -1,46 +1,47 @@
-import React, { Component } from "react";
-import "../Style/header.css";
-import { Link } from "react-router-dom";
+/* eslint-disable react/no-unescaped-entities */
+import React, { Component } from 'react';
+import '../Style/header.css';
+import { Link } from 'react-router-dom';
 class Zeynep extends Component {
-  render() {
-    return (
-      <div className="özür" style={{ fontSize: "18px" }}>
-        <div className="c_header">
-          <div className="c_header__inner">
-            <div className="c_header__logo-container">
-              <Link
-                to="/Zeynep"
-                className="c_header__logo-wrap cd navbar-brand"
-              >
+	render() {
+		return (
+			<div className="özür" style={{ fontSize: '18px' }}>
+				<div className="c_header">
+					<div className="c_header__inner">
+						<div className="c_header__logo-container">
+							<Link
+								to="/Zeynep"
+								className="c_header__logo-wrap cd navbar-brand"
+							>
                 Zeynep Senden Özür Dilerim
-              </Link>
-            </div>
-          </div>
-        </div>
+							</Link>
+						</div>
+					</div>
+				</div>
 
-        <div clasname=" mesaj container">
-          <div className="row">
-            <div
-              className="col-md-12"
-              style={{
-                maxWidth: "750px",
-                margin: "0 auto",
-                border: "1px solid grey",
-                marginTop: "12px",
-                marginBottom: "30px",
-              }}
-            >
-              <div className="Sorry_tittle">
-                <p style={{ marginLeft: "30px", marginTop: "30px" }}>
+				<div clasname=" mesaj container">
+					<div className="row">
+						<div
+							className="col-md-12"
+							style={{
+								maxWidth: '750px',
+								margin: '0 auto',
+								border: '1px solid grey',
+								marginTop: '12px',
+								marginBottom: '30px',
+							}}
+						>
+							<div className="Sorry_tittle">
+								<p style={{ marginLeft: '30px', marginTop: '30px' }}>
                   Merhaba Zeynep senden çok özür dilerim. Sana hikayeyi baştan
                   anlatmak istiyorum:
-                </p>
-              </div>
-              <div></div>
-              <p
-                className="sry-text"
-                style={{ maxWidth: "750px", width: "100%", margin: "0 auto" }}
-              >
+								</p>
+							</div>
+							<div></div>
+							<p
+								className="sry-text"
+								style={{ maxWidth: '750px', width: '100%', margin: '0 auto' }}
+							>
                 Seni ilk Eylül (okulun ikinci veya üçüncü haftası) ayında gördüm.Lisede o güne kadar seni hiç
                 görmedim. O gün tramvaya geç kalmıştım ve 8.04 tramvayına
                 binmiştim.Her gün olduğu gibi tramvayın kapısına yaslanmıştım.
@@ -72,10 +73,10 @@ class Zeynep extends Component {
                 gelene kadar dışarı çıkarken sen tam içeri girdin.O an dünyada
                 ne varsa unutmuştum sadece sen vardın çevremde... Sonra seni
                 baya merak ediyordum arkadaşlarımın hepsi sen aşık olmuşsun ama
-                ben bunu kabul etmiyordum ama gerçek buydu{" "}
-                <strong>
-                  <i> sana aşık olmuştum</i>
-                </strong>
+                ben bunu kabul etmiyordum ama gerçek buydu{' '}
+								<strong>
+									<i> sana aşık olmuştum</i>
+								</strong>
                 . En sonunda arkadaşıma dedim 'Kanka ben Zeynebi çok merak
                 ediyorum.Nerede Oturduğunu çok merak ediyorum'.O günden sonra
                 seni 2-3 defa takip etmeye başlamıştık.Taki o gün bizi
@@ -137,27 +138,27 @@ class Zeynep extends Component {
                 birini hiç affetmezdim.Sadece senin aklında kötü birisi olmak
                 istemiyorum.Zeynep ben seni çok seviyorum.Senden çok özür
                 dilerim...
-                <div>
-                  <span>
-                    <i
-                      style={{
-                        color: "grey",
-                        float: "right",
-                        padding: "5px",
-                        marginLight: "5px",
-                        display: "inlane-block",
-                      }}
-                    >
+								<div>
+									<span>
+										<i
+											style={{
+												color: 'grey',
+												float: 'right',
+												padding: '5px',
+												marginLight: '5px',
+												display: 'inlane-block',
+											}}
+										>
                       Eray Çetin 17.04.2020
-                    </i>
-                  </span>
-                </div>
-                <br />
-                <hr />
-              </p>
+										</i>
+									</span>
+								</div>
+								<br />
+								<hr />
+							</p>
 
-              <div>
-                <p>
+							<div>
+								<p>
                   Bu yazıyı sana yazdıktan tam 2 gün geçmişti.İnsan ağlamaya
                   yakın olduğu an boğazında yumru olurya aynısı ben bunları
                   yazarken oldu. Sana bir sır vereyim mi? Ben tek seni görünce
@@ -178,29 +179,29 @@ class Zeynep extends Component {
                   aptalca deme. Senden tek isteğim bu yazıyı sana atmışsam başka
                   kimseye gösterme (Biliyorum göstereceksin) olur mu. Senden tek
                   isteğim bu olsun.
-                </p>
-                <div>
-                  <span>
-                    <i
-                      style={{
-                        color: "grey",
-                        float: "right",
-                        padding: "5px",
-                        marginLight: "5px",
-                        display: "inlane-block",
-                      }}
-                    >
+								</p>
+								<div>
+									<span>
+										<i
+											style={{
+												color: 'grey',
+												float: 'right',
+												padding: '5px',
+												marginLight: '5px',
+												display: 'inlane-block',
+											}}
+										>
                       Eray Çetin 19.04.2020
-                    </i>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
+										</i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		);
+	}
 }
 
 export default Zeynep;
