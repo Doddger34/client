@@ -36,7 +36,7 @@ const AddNot = ( {session} ) => {
 	return (
 		<div className="container contact-form">
 			<form onSubmit={ onSubmit }>
-				<h3 className="card-title text-center" >Notlarım a not ekleyiniz.</h3>
+				<h3 className="card-title text-center" >Notlarım'a not ekleyiniz.</h3>
 				<div className="row">
 					<div className="col-md-6">
 						<div className="form-group mt-3">
