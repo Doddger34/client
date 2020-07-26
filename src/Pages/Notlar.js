@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState} from 'react';
 
 import NCard from '../component/Nt_Card';
 import { useQuery } from '@apollo/client';
@@ -9,18 +9,19 @@ const Notlar = () => {
 	const { loading, data, error } = useQuery(GetNotesQuery);
 	if (loading) return <p style={{ textAlign: 'center' }}>Loading...</p>;
 	if (error) return <p style={{ textAlign: 'center' }}>Error...</p>;
-	return (
+	return ( 
 		<div>
-			{data.Notes.map((data) => (
-				<NCard
+			{
+				data.Notes.map(data => (
+	 				<NCard 	
 					key={data.id}
 					Name={data.Name}
 					Link={data.Link}
 					Ders={data.Lesson.Name}
 					UserName={data.User.UserName}
 					Class={data.Class.ClassName}
-				/>
-			))
+					/>
+				))
 			}
 		</div>
 	); 
