@@ -8,7 +8,7 @@ const ListClass = ({ ClassId, SetClassId }) => {
     if (loading) return <div>Yükleniyor...</div>;
     if (error) return <div>Hata</div>;
     return(
-        <select className="form-control select" onChange={e => SetClassId(e.target.value)} >
+        <select required className="form-control select" onChange={e => SetClassId(e.target.value)} >
             <option selected disabled={true}>Sınıf Seçiniz</option>
             {
                 data.Classes.map(data => (

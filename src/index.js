@@ -11,20 +11,11 @@ import {
 } from "@apollo/client";
 import fetch from "cross-fetch";
 import { setContext } from 'apollo-link-context';
-import { WebSocketLink } from '@apollo/client/link/ws';
 
 const httpLink = createHttpLink({
   uri: "https://notlarmbackend.herokuapp.com/graphql",
   fetch,
 });
-
-// const wsLink = new WebSocketLink({
-//   uri: `ws://notlarmbackend.herokuapp.com/graphql`,
-//   options: {
-//     reconnect: true
-//   }
-// });
-
 const authLink = setContext((_, { headers }) => {
   const token = sessionStorage.getItem('token');
   return {
@@ -39,7 +30,6 @@ const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
   credentials: "include",
-  //wsLink
 });
 
 ReactDOM.render(

@@ -158,9 +158,9 @@ class Navbar extends Component {
                         <li>
                           <NavLink
                             to="/Giris"
-                            className="udlite-btn udlite-btn-large udlite-btn-ghost udlite-heading-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-text-md udlite-block-list-item-link"
+                            className="udlite-heading-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-text-md udlite-block-list-item-link"
                           >
-                            <span className="udlite-block-list-item-content">
+                            <span className="N-block-content">
                               Oturum aç
                             </span>
                           </NavLink>
@@ -170,7 +170,7 @@ class Navbar extends Component {
                             to="/Kaydol"
                             className="udlite-btn udlite-btn-large udlite-btn-ghost udlite-heading-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-text-md udlite-block-list-item-link"
                           >
-                            <span className="udlite-block-list-item-content">
+                            <span className="N-block-content">
                               Kaydol
                             </span>
                           </NavLink>

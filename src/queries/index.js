@@ -149,6 +149,105 @@ export const GetBiologyNotesQuery = gql`
   }
 `;
 
+export const GetHistoryNotesQuery = gql`
+  query {
+    Lesson(id: "5f1e8c9bd506a117b0d83fd3") {
+      Name
+      Not {
+        id
+        Name
+        Link
+        Lesson{
+          Name
+        }
+        User {
+          id
+          UserName
+          email
+        }
+        Class{
+          id
+          ClassName
+        }
+      }
+    }
+  }
+`;
+
+export const GetPhilosophyNotesQuery = gql`
+  query {
+    Lesson(id: "5f1e8c72d506a117b0d83fd0") {
+      Name
+      Not {
+        id
+        Name
+        Link
+        Lesson{
+          Name
+        }
+        User {
+          id
+          UserName
+          email
+        }
+        Class{
+          id
+          ClassName
+        }
+      }
+    }
+  }
+`;
+
+export const GetGeographyNotesQuery = gql`
+  query {
+    Lesson(id: "5f1e8c93d506a117b0d83fd2") {
+      Name
+      Not {
+        id
+        Name
+        Link
+        Lesson{
+          Name
+        }
+        User {
+          id
+          UserName
+          email
+        }
+        Class{
+          id
+          ClassName
+        }
+      }
+    }
+  }
+`;
+export const GetReligionNotesQuery = gql`
+  query {
+    Lesson(id: "5f1e8c87d506a117b0d83fd1") {
+      Name
+      Not {
+        id
+        Name
+        Link
+        Lesson{
+          Name
+        }
+        User {
+          id
+          UserName
+          email
+        }
+        Class{
+          id
+          ClassName
+        }
+      }
+    }
+  }
+`;
+
 export const GetPhysicsNotesQuery = gql`
   query {
   Lesson(id: "5ebc688f4f741a2df89f7a84") {
@@ -244,6 +343,15 @@ export const GET_USER = gql`
         Link
         Lesson {
           Name
+        }
+        User {
+        id
+        UserName
+        email
+        }
+        Class{
+          id
+          ClassName
         }
       }
       Block

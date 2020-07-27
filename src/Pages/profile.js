@@ -16,17 +16,17 @@ const UserNotes = () => {
 		<div>
 			{data.activeUser.Not.length <= 0 ? (
 				<div className="nsn">
-          Not paylaşılmamış...
+          Not paylaşılmamış...	
 				</div>
 			) : (
-				data.activeUser.Not.map((Not) => (
+				data.activeUser.Not.map((data) => (
 					<NCard
-						key={Not.id}
-						Name={Not.Name}
-						Link={Not.Link}
-						Ders={Not.Lesson.Name}
-						UserName= { data.User.UserName }
+						key = { data.id }
+						Name = { data.Name }
+						Link = { data.Link }
+						Ders = { data.Lesson.Name }
 						Class = { data.Class.ClassName }
+						UserName = { data.User.UserName }
 					/>
 				))
 			)}

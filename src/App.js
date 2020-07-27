@@ -8,6 +8,10 @@ import Kimya from "./Dersler/Kimya";
 import Edebiyat from "./Dersler/Edebiyat";
 import Inglizce from "./Dersler/İnglizce";
 import Fizik from "./Dersler/Fizik";
+import Felsefe from "./Dersler/Felsefe";
+import Dın from "./Dersler/Din";
+import Cografya from "./Dersler/Cografya";
+import Tarih from "./Dersler/Tarih";
 import Matematik from "./Dersler/Matematik";
 import Hakkımız from "./Pages/Hakkımız";
 import Profil from "./Pages/profile";
@@ -35,6 +39,10 @@ const Root = ({ session, refetch }) => (
         <Route exact path='/Dersler'  render={ () => <Dersler session={session} />} />
         <Route exact path='/Notlar'  render={ () => <Notlar  />} />
         <Route exact path='/Biyoloji'  render={ () => <Biyoloji  />}/>
+        <Route exact path='/Felsefe'  render={ () => <Felsefe  />}/>
+        <Route exact path='/Tarih'  render={ () => <Tarih  />}/>
+        <Route exact path='/Din Kültürü'  render={ () => <Dın  />}/>
+        <Route exact path='/Coğrafya'  render={ () => <Cografya  />}/>
         <Route exact path='/Kimya'  render={ () => <Kimya  />}/>
         <Route exact path='/Edebiyat'  render={ () => <Edebiyat  />} />
         <Route exact path='/İngilizce'  render={ () => <Inglizce  />} />

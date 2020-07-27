@@ -46,10 +46,11 @@ const AddNot = ( {session} ) => {
 								className="form-control"
 								placeholder="Not ismi"
 								value={ Name }
+								required
 								onChange={ e => SetName(e.target.value) }
 							/>
 						</div>
-						<ListLesson lessonId={lessonId} SetlessonId={SetlessonId} />
+						<ListLesson  lessonId={lessonId} SetlessonId={SetlessonId} />
 						<ListClass ClassId={ClassId} SetClassId={SetClassId} />
 					</div>
 					<div className="col-md-6">
@@ -60,6 +61,7 @@ const AddNot = ( {session} ) => {
 								placeholder="Pdf olarak link ekleyiniz..."
 								style={{width: '100%',height: '150px'}}
 								value={Link}
+								required
 								onChange={ e => SetLink(e.target.value) }
 							></textarea>
 						</div>

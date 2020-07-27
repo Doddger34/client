@@ -8,7 +8,7 @@ class Les_Card extends Component {
       <div className="card Ls" style={{ width: "18rem" }}>
         <div className="card-body Ls_body">
           <h5 className="card-title Ls_body-tittle">{this.props.Name}</h5>
-          <Link to={this.props.Name} className="btn btn-quaternary">
+          <Link to={`${this.props.Name}`} className="btn btn-quaternary">
             Notları Göster
           </Link>
         </div>
