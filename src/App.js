@@ -18,6 +18,7 @@ import Profil from "./Pages/profile";
 import Login from "./Pages/Login";
 import SigIn from "./Pages/SignIn";
 import AddNote from "./Pages/AddNotes";
+import Dev from "./Pages/Dev";
 
 import sessionWrapperHOC from './components/SessionWrapperHOC';
 import Navbar from "./components/Navbar";
@@ -53,6 +54,7 @@ const Root = ({ session, refetch }) => (
         <Route exact path='/Notekle'  render={ () => <AddNote session={session}  />} />
         <Route exact path='/Kaydol' render={ () => <SigIn /> } />
         <Route exact path='/Giris'  render={ () => <Login /> } />
+        <Route exact path='/Dev'  render={ () => <Dev /> } />
         <PageNotFound />
       </Switch>
       <Footer />
