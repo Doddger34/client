@@ -359,3 +359,44 @@ export const GET_USER = gql`
     }
   }
 `;
+
+export const CreatePosts = gql`
+  mutation($content: String!, $classId: ID!, $userId: ID!){
+    CreatePost(data:{content: $content, classId: $classId,userId: $userId }){
+      content
+      User{
+        id
+        UserName
+        role
+      }
+      Class{
+        id
+        ClassName
+      }
+      CreatedAt
+      
+    }
+  }
+`;
+
+export const GetPosts = gql`
+  
+  query {
+  Posts {
+    id
+    content
+    img
+    User {
+      id
+      UserName
+      role
+    }
+    Class {
+      id
+      ClassName
+    }
+  }
+}
+
+
+`;

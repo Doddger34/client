@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React, { useEffect } from 'react';
 import NCard from '../component/Nt_Card';
 import { useQuery } from '@apollo/client';

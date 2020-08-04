@@ -16,7 +16,9 @@ class Footer extends Component {
             </div>
 
             <hr className="clearfix w-100 d-md-none" />
-            <button className="clearfix d-md-none btn btn btn-outline-secondary m-auto">Oturum aç / Kaydol</button>  
+            <button className="clearfix d-md-none btn btn btn-outline-secondary m-auto">
+              <Link to="/Kaydol" style={{textDecoration:"none"}}>Oturum aç / Kaydol</Link>
+            </button>  
           </div>
         </div>
         <hr />

@@ -19,6 +19,7 @@ import Login from "./Pages/Login";
 import SigIn from "./Pages/SignIn";
 import AddNote from "./Pages/AddNotes";
 import Dev from "./Pages/Dev";
+import Blog from "./Pages/Blog";
 
 import sessionWrapperHOC from './components/SessionWrapperHOC';
 import Navbar from "./components/Navbar";
@@ -55,6 +56,7 @@ const Root = ({ session, refetch }) => (
         <Route exact path='/Kaydol' render={ () => <SigIn /> } />
         <Route exact path='/Giris'  render={ () => <Login /> } />
         <Route exact path='/Dev'  render={ () => <Dev /> } />
+        <Route exact path='/Blog'  render={ () => <Blog session={session} /> } />
         <PageNotFound />
       </Switch>
       <Footer />

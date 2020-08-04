@@ -35,6 +35,10 @@ const Home = ( { session } ) => {
 							<Link to="/Dev"> Geliştirici </Link> notlarına gidip site ile
               ilgili gelişmeleri takip edeblirsiniz.
 						</p>
+						<p>
+							Oturum açıp, <Link to="/Blog"> Blog </Link> sayfasına gidip anlamadığınız veya kafanızı karıştıran
+							her soruyo sorabilirsiniz.
+						</p>
 					</div>
 				</div>
 			</div>

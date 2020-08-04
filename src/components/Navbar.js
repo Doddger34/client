@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import "../Style/header.css";
 import Logout from "./Logout";
+
 class LinksWithLogin extends Component {
   render() {
     const session = this.props.session;
@@ -105,6 +106,15 @@ class Navbar extends Component {
                 Notlar
               </NavLink>
             </div>
+            {
+              session.activeUser ? 
+              <div className="c_header__left-links">
+                <NavLink className="c_header__left-link ml-3 " to="/Blog">
+                  Blog
+                </NavLink>
+              </div>
+              :null
+            }
           </div>
 
           <div className="c_header__right">

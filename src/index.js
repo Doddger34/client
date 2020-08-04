@@ -13,7 +13,7 @@ import fetch from "cross-fetch";
 import { setContext } from 'apollo-link-context';
 
 const httpLink = createHttpLink({
-  uri: "https://notlarmbackend.herokuapp.com/graphql",
+  uri: "https://notlarmbackend.herokuapp.com/graphql/",
   fetch,
 });
 const authLink = setContext((_, { headers }) => {
@@ -38,7 +38,7 @@ ReactDOM.render(
       <App />
     </React.StrictMode>
   </ApolloProvider>,
-  document.getElementById('root')
+  document.getElementById('notlarm')
 );
 
 serviceWorker.unregister();
