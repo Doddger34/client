@@ -218,6 +218,17 @@ class Navbar extends Component {
                           </NavLink>  
                         </li>:null
                       }
+                      {
+                        session.activeUser ? <li className="menu__link menu__link-temporary-spacing">
+                          <NavLink
+                            to="/Blog"
+                            className="c_header__left-link"
+                            tabIndex="0"
+                          >
+                            Blog
+                          </NavLink>  
+                        </li>:null
+                      }
                       <li className="menu__link menu__link-temporary-spacing">
                         <NavLink
                           to="/Hakkımızda"
