@@ -427,7 +427,7 @@ textarea.form-control {
 
 .wt1v {
     /*textareanın genişlik*/
-    width: 466px !important;
+    width: 100% !important;
 }
 
 .n_blog_content_input {
@@ -513,4 +513,14 @@ textarea.form-control {
 
 .cttunfw {
     font-weight: 600;
+}
+
+
+@media screen and (max-width: 767px) {
+    .n_blog_content_input {
+        width: 250px;
+    }
+    .w5w1v {
+        width: 300px;
+    }
 }
