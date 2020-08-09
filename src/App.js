@@ -59,7 +59,7 @@ const Root = ({ session, refetch }) => (
         <Route exact path='/Blog'  render={ () => <Blog session={session} /> } />
         <PageNotFound />
       </Switch>
-      <Footer />
+      <Footer session = {session} />
     </Fragment>
   </Router>
 );

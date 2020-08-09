@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../Style/Footer.css";
 class Footer extends Component {
    render() {
+     const session = this.props.session;
     return (
       <footer className="page-footer font-small stylish-color-dark pt-4 F_footer">
         <div className="container text-center text-md-left">
@@ -14,11 +15,13 @@ class Footer extends Component {
                 huzurunuza sunmak için elimizden geleni yapıyoruz.
               </p>
             </div>
-
-            <hr className="clearfix w-100 d-md-none" />
-            <button className="clearfix d-md-none btn btn btn-outline-secondary m-auto">
+            {
+              session.activeUser ? null:<div className="clearfix w-100 d-md-none"> 
+              <hr className="clearfix w-100 d-md-none" /> <button className="clearfix d-md-none btn btn btn-outline-secondary m-auto">
               <Link to="/Kaydol" style={{textDecoration:"none"}}>Oturum aç / Kaydol</Link>
-            </button>  
+            </button>
+              </div>
+            }  
           </div>
         </div>
         <hr />

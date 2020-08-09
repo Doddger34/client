@@ -4,8 +4,10 @@ import ModalPost from "./ModalPost";
 
 const BlogInput = ({ session }) => {
 	const [modalShow, setModalShow] = useState(false);
+	
 	return (
 		<div className="sz34e btwsd">
+		
 			<div className="e7sdg ze3d">
 				<div className="n_blog e2719Z ws1 gr5s c7sd ">
 					<div className="n_blog_margin c7sd">

@@ -36,8 +36,8 @@ const Home = ( { session } ) => {
               ilgili gelişmeleri takip edeblirsiniz.
 						</p>
 						<p>
-							Oturum açıp, <Link to="/Blog"> Blog </Link> sayfasına gidip anlamadığınız veya kafanızı karıştıran
-							her soruyo sorabilirsiniz.
+							<Link to="/Blog"> Blog </Link> sayfasına gidip anlamadığınız veya kafanızı karıştıran
+							her soruyu sorabilirsiniz.
 						</p>
 					</div>
 				</div>

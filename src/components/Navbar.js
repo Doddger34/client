@@ -106,17 +106,12 @@ class Navbar extends Component {
                 Notlar
               </NavLink>
             </div>
-            {
-              session.activeUser ? 
-              <div className="c_header__left-links">
+            <div className="c_header__left-links">
                 <NavLink className="c_header__left-link ml-3 " to="/Blog">
                   Blog
                 </NavLink>
               </div>
-              :null
-            }
           </div>
-
           <div className="c_header__right">
             <div className="c_header__right-about">
               <NavLink to="/Hakkımızda" className="c_header__left-link mr-2">
@@ -218,17 +213,15 @@ class Navbar extends Component {
                           </NavLink>  
                         </li>:null
                       }
-                      {
-                        session.activeUser ? <li className="menu__link menu__link-temporary-spacing">
-                          <NavLink
-                            to="/Blog"
-                            className="c_header__left-link"
-                            tabIndex="0"
-                          >
-                            Blog
-                          </NavLink>  
-                        </li>:null
-                      }
+                      <li className="menu__link menu__link-temporary-spacing">
+                        <NavLink
+                          to="/Blog"
+                          className="c_header__left-link"
+                          tabIndex="0"
+                        >
+                          Blog
+                        </NavLink>  
+                      </li>
                       <li className="menu__link menu__link-temporary-spacing">
                         <NavLink
                           to="/Hakkımızda"
