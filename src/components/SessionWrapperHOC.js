@@ -8,7 +8,7 @@ const sessionWrapperHOC = (Component) => (props) => {
   return (
     <div>
       {loading ? (
-        <div style={{ textAlign: "center" }}>Yükleniyor...</div>
+        <div style={{ textAlign: "center", margin:"0 auto" }}>Yükleniyor...</div>
       ) : (
         <Component {...props} session={data} />
       )}

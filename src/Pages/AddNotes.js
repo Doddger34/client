@@ -50,7 +50,7 @@ const AddNot = ( {session} ) => {
 								onChange={ e => SetName(e.target.value) }
 							/>
 						</div>
-						<ListLesson  lessonId={lessonId} SetlessonId={SetlessonId} />
+						<ListLesson lessonId={lessonId} SetlessonId={SetlessonId} />
 						<ListClass ClassId={ClassId} SetClassId={SetClassId} />
 					</div>
 					<div className="col-md-6">

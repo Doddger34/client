@@ -8,7 +8,7 @@ const Blog = ({ session }) => {
 	if (!session.activeUser) {
 		return (
 			<div className="bck whxa1s mas1cdz ">
-				<div class="sz34e">
+				<div className="sz34e">
 					<div className="rear">
 						<div className="fstd">
 							<Link to="/Kaydol" >

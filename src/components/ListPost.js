@@ -7,7 +7,9 @@ import BlogPost from '../components/BlogPost';
 const ListPost = () => {
     const { loading, data, error } = useQuery(GetPosts);
 	if (loading) return <div style={{textAlign:'center'}}>Yükleniyor...</div>;
-	if (error) return <div style={{textAlign:'center'}}>Hata...</div>;    
+    if (error) return <div style={{textAlign:'center'}}>Hata...</div>;   
+    console.log(data);
+   
     return (
         <div>
         {
@@ -15,10 +17,11 @@ const ListPost = () => {
                 return(
                     <BlogPost 
                         key = { dat.id }
+                        id = { dat.id }
                         userName = { dat.User.UserName }
                         userRole= { dat.User.role }
                         content = { dat.content }
-                        img = { dat.img }
+                        like = { dat.like }
                     />
                 );
             })
@@ -27,4 +30,4 @@ const ListPost = () => {
     )
 }
 
-export default ListPost
+export default ListPost;

@@ -271,7 +271,6 @@ export const GetPhysicsNotesQuery = gql`
     }
   }
 }
-
 `;
 
 export const GetClass = gql`
@@ -303,7 +302,6 @@ export const CreateNot = gql`
     Name
   }
 }
-
 `;
 export const CreateLesson = gql`
   mutation($Name: String!) {
@@ -397,6 +395,4 @@ export const GetPosts = gql`
     }
   }
 }
-
-
 `;

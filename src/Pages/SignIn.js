@@ -18,7 +18,7 @@ const SignIn = () => {
 			variables: { UserName: UserName, password: password, email: email },
 		}).then(async ({ data }) => {
 			sessionStorage.setItem('token', data.createUser.token);
-			history.push('/');
+			history.push('/'); //anasayfaya gidiyoz
 			window.location.reload(); //sayfayı yenileyip activeUser's datasını alıyoruz
 		});
 	};
@@ -29,7 +29,7 @@ const SignIn = () => {
 					<div className="card card-signin flex-row my-5">
 						<div className="card-body">
 							<h5 className="card-title text-center">
-                Kaydolun ve Öğrenmeye Başlayın!
+                				Kaydolun ve Öğrenmeye Başlayın!
 							</h5>
 							<hr />
 							{error && (

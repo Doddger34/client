@@ -20,8 +20,7 @@ const ModalPost = ( props ) => {
 		CreatePost({
 			variables: {  userId:userId, content: content, classId:classId },
 		}).then(() => {
-			refetch(); //Paylaşım oldutan sonra postları yeniliyor
-			props.onHide();
+			refetch(); //Paylaşım oldutan sonra postları yeniliyor;			props.onHide(); //Nodalı kapatıyor;
 		})
 	};
 

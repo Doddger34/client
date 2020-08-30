@@ -7,13 +7,13 @@ import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
-  createHttpLink,
 } from "@apollo/client";
+import { createUploadLink } from 'apollo-upload-client'
 import fetch from "cross-fetch";
 import { setContext } from 'apollo-link-context';
 
-const httpLink = createHttpLink({
-  uri: "https://notlarmbackend.herokuapp.com/graphql/",
+const httpLink = createUploadLink({
+  uri: "http://localhost:3009/graphql/",
   fetch,
 });
 const authLink = setContext((_, { headers }) => {

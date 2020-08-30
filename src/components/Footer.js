@@ -34,6 +34,13 @@ class Footer extends Component {
             </Link>
           </li>
           <li className="list-inline-item">
+            <a href="https://www.instagram.com/notlarim.app/" rel="noopener noreferrer"  target="_blank" className="btn-floating btn-fb mx-1">
+              <i className="fab fa-instagram" aria-hidden="true">
+                {" "}
+              </i>
+            </a>
+          </li>
+          <li className="list-inline-item">
             <Link to="#" className="btn-floating btn-tw mx-1">
               <i className="fab fa-twitter" aria-hidden="true"></i>
             </Link>
