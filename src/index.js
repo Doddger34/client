@@ -13,7 +13,7 @@ import fetch from "cross-fetch";
 import { setContext } from 'apollo-link-context';
 
 const httpLink = createUploadLink({
-  uri: "http://localhost:3009/graphql/",
+  uri: "https://notlarmbackend.herokuapp.com/graphql/",
   fetch,
 });
 const authLink = setContext((_, { headers }) => {
