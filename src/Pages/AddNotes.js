@@ -57,7 +57,7 @@ const AddNot = ( {session} ) => {
 						<div className="form-group mt-3">
 							<textarea
 								name="txtMsg"
-								className="form-control"
+								className="form-control txtMsg"
 								placeholder="Pdf olarak link ekleyiniz..."
 								style={{width: '100%',height: '150px'}}
 								value={Link}
