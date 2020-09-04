@@ -3,7 +3,7 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import { GetClass } from "../queries/index";
 
-const ListClass = ({ ClassId, SetClassId }) => {
+const ListClass = ({ SetClassId }) => {
     const { data, loading, error } = useQuery(GetClass);
     if (loading) return <div>Yükleniyor...</div>;
     if (error) return <div>Hata</div>;

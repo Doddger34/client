@@ -43,3 +43,24 @@
 .txtMsg{
     resize:none;
 }
+
+.convertpdf span{
+    font-weight: 700;
+}
+
+.convertpdf span:hover{
+    cursor: pointer;
+}
+
+.convertpdf a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.hpmd {
+    font-size: 1.1rem;
+}
+
+.hpmd ul li {
+    margin-top: 10px;
+}

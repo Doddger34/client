@@ -2,9 +2,8 @@ import React from "react";
 import "../Style/Blog.css";
 import { Link } from "react-router-dom";
 
-
-const BlogPost = ({ content, userName, userRole, img, like, id }) =>{
-	return ( 
+const BlogPost = ({ content, userName, userRole }) => {
+	return (
 		<div className="sz34e ı9jk ws1 du4w ">
 			<div className=" ı9jk du4w ">
 				<div className="lszc">
@@ -23,8 +22,8 @@ const BlogPost = ({ content, userName, userRole, img, like, id }) =>{
 														<img
 															height="40"
 															width="40"
-                                                            className="sf45f emlx bkms sbp7 a8c3 "
-                                                            src = "#"
+															className="sf45f emlx bkms sbp7 a8c3 "
+															src="#"
 														/>
 														<div
 															className="sf45f emlx bkms sbp7 pmk7 oaz4 kr520xx j9is"

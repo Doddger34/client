@@ -12,7 +12,6 @@ const Notlar = () => {
 	},[refetch]);
 	if (loading) return <p style={{ textAlign: 'center' }}>Loading...</p>;
 	if (error) return <p style={{ textAlign: 'center' }}>Error...</p>;
-	console.log(data)
 	return ( 
 		<div>
 			{
