@@ -41,13 +41,19 @@ const ShowConverts = (props) => {
 										</div>
 									</li>
 									<li>
-										Elde ettiğiniz pdf'i <a href="https://www.google.com.tr/drive/about.html">Google Driver</a>' a yükleyin.
+										Elde ettiğiniz pdf'i{" "}
+										<a href="https://www.google.com.tr/drive/about.html">
+											Google Driver
+										</a>
+										' a yükleyin.
 									</li>
 									<li>
-										Yüklediğiniz notun üzerine tıklayıp sağ üst köşedeki üç noktaya tıklayın. 
+										Yüklediğiniz notun üzerine tıklayıp sağ
+										üst köşedeki üç noktaya tıklayın.
 									</li>
 									<li>
-										Daha sonra bağlantıyı alın diyin ve bağlantıyı kopyalayın yapınız.
+										Daha sonra bağlantıyı alın diyin ve
+										bağlantıyı kopyalayın yapınız.
 									</li>
 								</ul>
 							</div>
