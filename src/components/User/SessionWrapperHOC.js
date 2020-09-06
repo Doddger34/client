@@ -1,7 +1,7 @@
 import React from "react";
-import { useQuery } from "@apollo/client";
+import { useQuery } from "@apollo/client"
 
-import { GET_USER } from "../queries/index";
+import { GET_USER } from "../../queries/index";
 
 const sessionWrapperHOC = (Component) => (props) => {
   const { loading, data } = useQuery(GET_USER);

@@ -20,7 +20,7 @@ import SigIn from "./Pages/SignIn";
 import AddNote from "./Pages/AddNotes";
 import Dev from "./Pages/Dev";
 
-import sessionWrapperHOC from './components/SessionWrapperHOC';
+import sessionWrapperHOC from './components/User/SessionWrapperHOC';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 

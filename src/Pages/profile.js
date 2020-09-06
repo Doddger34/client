@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import NCard from '../component/Nt_Card';
 import { useQuery } from '@apollo/client';
 import { GET_USER } from '../queries/index';
-import auth from '../components/auth';
+import auth from '../components/User/auth';
 import '../Style/Profile.css';
 
 const UserNotes = () => {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import ModalPost from "./ModalPost";
+import ModalPost from "../ModalPost";
 
 const BlogInput = ({ session }) => {
 	const [modalShow, setModalShow] = useState(false);

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useQuery } from '@apollo/client';
-import { GetPosts } from '../queries/index';
+import { GetPosts } from '../../../queries/index';
 import BlogPost from '../components/BlogPost';
 
 const ListPost = () => {
