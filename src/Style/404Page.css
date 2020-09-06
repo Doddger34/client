@@ -153,7 +153,8 @@
   }
 }
 
-#bracefront,#braceback {
+#bracefront,
+#braceback {
   animation: braces 1s linear infinite;
 }
 
