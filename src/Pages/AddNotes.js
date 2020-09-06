@@ -32,7 +32,7 @@ const ShowConverts = (props) => {
 										<div class="cmpf">
 											Notları pdf haline dönüştürmek için{" "}
 											<a
-												href="https://smallpdf.com/tr/jpg-to-pdf"
+												href="https://bit.ly/2R0yWBu"
 												target="_blank"
 												rel="noopener noreferrer"
 											>
