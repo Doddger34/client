@@ -98,6 +98,7 @@ const AddNot = ({ session }) => {
 			});
 		}
 	};
+	if (error) return <div>Başarısız yükleme</div>;
 	return (
 		<div className="container contact-form">
 			<form onSubmit={onSubmit}>
