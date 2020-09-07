@@ -1,18 +1,22 @@
 import React, { Component, Fragment } from "react";
 import { NavLink } from "react-router-dom";
+
+import Icon from '../component/Icon';
+
 import "../Style/header.css";
 import Logout from "./Logout";
 
 class LinksWithLogin extends Component {
 	render() {
-		const session = this.props.session;
 		return (
 			<div className="c_header__right-profile mr-2  mt-1">
 				<NavLink to="/Notekle" className="c_header__profile-link mr-2">
 					Not Ekle
 				</NavLink>
 				<NavLink to="/profil" className="c_header__profile-link  ">
-					{session.activeUser.UserName}
+					<span className="m-2"> 
+						<Icon name="User" /> 
+					</span>
 				</NavLink>
 				<Logout />
 			</div>
@@ -86,10 +90,7 @@ class Navbar extends Component {
 							aria-hidden="true"
 							onClick={this.onClick}
 						>
-							<span
-								className="fas fa-bars"
-								aria-hidden="true"
-							></span>
+							<Icon name="Menu" size={30} />
 						</button>
 					</div>
 					<div className="c_header__logo-container">
@@ -155,7 +156,7 @@ class Navbar extends Component {
 											type="button"
 											onClick={this.Close}
 										>
-											<span className="fas fa-times"></span>
+											<Icon name="X" size={30} />
 										</button>
 									</div>
 									<br />
@@ -228,7 +229,7 @@ class Navbar extends Component {
 														className="c_header__left-link"
 														tabIndex="0"
 													>
-														Not Ekle
+														Not 
 													</NavLink>
 												</li>
 											) : null}

@@ -2,28 +2,31 @@ import React from "react";
 import { ApolloConsumer } from "@apollo/client";
 import { useHistory } from "react-router";
 
+import Icon from "../component/Icon";
+
 const onClick = (history, client) => {
-  sessionStorage.setItem("token", "");
-  history.push("/");
-  client.resetStore();
+	sessionStorage.setItem("token", "");
+	history.push("/");
+	client.resetStore();
 };
 const Logout = () => {
-  let history = useHistory();
+	let history = useHistory();
 
-  return (
-    <ApolloConsumer>
-      {(client) => {
-        return (
-          <button
-            className="btn btn-outline-secondary ml-2 "
-            onClick={() => onClick(history, client)}
-          >
-            <span>Çıkış</span>
-          </button>
-        );
-      }}
-    </ApolloConsumer>
-  );
+	return (
+		<ApolloConsumer>
+			{(client) => {
+				return (
+					<span style={{cursor:"pointer"}}>
+						<Icon
+							name="LogOut"
+							onClick={() => onClick(history, client)}
+							className="m-1"
+						/>
+					</span>
+				);
+			}}
+		</ApolloConsumer>
+	);
 };
 
 export default Logout;

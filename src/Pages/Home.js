@@ -7,15 +7,16 @@ import "../Style/Home.css";
 
 const Home = ({ session }) => {
 	const [modalShow, setModalShow] = useState(false);
-
 	return (
 		<div>
 			<div className="udlite-container container">
 				<div className="row">
 					{session.activeUser ? (
 						<div className="welcome-tittle">
-							<h5 className="udlite-heading-xxl my-learning-unit--title--3Oy5V col-md-xxs-12 ">
-								{session.activeUser.UserName}, öğrenmeye
+							<h5 className="text-center udlite-heading-xxl my-learning-unit--title--3Oy5V col-md-xxs-12 ">
+								<span className="">
+									{session.activeUser.UserName}
+								</span>, öğrenmeye
 								başlayalım
 							</h5>
 						</div>
@@ -23,8 +24,8 @@ const Home = ({ session }) => {
 				</div>
 			</div>
 			<hr className="clearfix w-100 " />
-			<div className="container">
-				<div className="row clg">
+			<div className="container ">
+				<div className="row clg ctnn">
 					<div className="col-md-7 col-lg-5 left">
 						<p>
 							Öğrencilerin kendi notlarını pdf halinde

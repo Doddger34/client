@@ -150,12 +150,18 @@ a {
     font-size: 20px;
 }
 
+.ctnn {
+    width: 100%;
+}
+
 /*Media*/
-@media screen and (max-width: 991px){
+@media screen and (max-width:  991px ){
     .home-left{
         padding-top:24px ;
         border-top: 1px solid #a7a7a7;
         border-left: none;
     }
-    
+    .ctnn {
+        margin: 0 auto;
+    }
 }
