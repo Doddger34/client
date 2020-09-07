@@ -5,8 +5,7 @@ const Dev = ()  => {
     return (
         <div className="dev">
             <ul className="dev-ul">
-                <li className="dev-ul-li">Blog sayfasında gönderilerin yorum bölümü eklenecektir.</li>
-                <li className="dev-ul-li">Blog sayfasında gönderilerin beğenme veya beğenmeme kısmı eklenecektir.</li>
+                <li className="dev-ul-li">Sitemizdeki bazı eksiklikler giderilecektir.</li>
             </ul>
         </div>
     )
