@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import "../Style/Card.css";
 
-const Nt_Card = ({ Name, Ders, Class, UserName, Link,Onclick,length }) => {
+const Nt_Card = ({ Name, Ders, Class, UserName, Link }) => {
   return (
     <div className="card Nt" style={{ width: "400px" }}>
       <div className="card-body">
@@ -20,6 +20,10 @@ const Nt_Card = ({ Name, Ders, Class, UserName, Link,Onclick,length }) => {
 }
 Nt_Card.prototypes = {
   Name: PropTypes.string.isRequired,
+  Ders: PropTypes.string.isRequired,
+  Class: PropTypes.string.isRequired,
+  UserName: PropTypes.string.isRequired,
+  Link: PropTypes.string.isRequired
 };
 
 export default Nt_Card;

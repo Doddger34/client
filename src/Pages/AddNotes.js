@@ -26,10 +26,10 @@ const ShowConverts = (props) => {
 				<Modal.Body>
 					<div>
 						<div className="brb mb-2">
-							<div class="hpmd ">
+							<div className="hpmd ">
 								<ul>
 									<li>
-										<div class="cmpf">
+										<div className="cmpf">
 											Notları pdf haline dönüştürmek için{" "}
 											<a
 												href="https://bit.ly/2R0yWBu"

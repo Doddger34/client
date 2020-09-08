@@ -5,7 +5,7 @@ import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
 
 import "../Style/Login.css";
-const Login = () => {
+const Login = props => {
 	const [signIn, { loading, error }] = useMutation(SıgınUser);
 	const [password, setPassword] = useState("");
 	const [UserName, setUserName] = useState("");
@@ -15,10 +15,10 @@ const Login = () => {
 		signIn({
 			variables: { UserName, password },
 			refetchQueries: { query: GET_USER },
-		}).then(({ data }) => {
+		}).then(async ({ data }) => {
 			sessionStorage.setItem("token", data.signIn.token);
+			await props.refetch()
 			history.push("/");
-			window.location.reload(); //sayfayı yenileyip activeUser's datasını alıyoruz
 		});
 	};
 	return (

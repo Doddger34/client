@@ -354,6 +354,9 @@ export const GET_USER = gql`
       }
       Block
       role
+      Avatarurl
+      CanDelete
+      createdAt
     }
   }
 `;

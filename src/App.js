@@ -31,13 +31,13 @@ import {
 } from "react-router-dom";
 import PageNotFound from './Pages/404page';
 
-const Root = ({ session, refetch }) => (
+const Root = props => (
   <Router>
     <Fragment>
-      <Navbar session={session} />
+      <Navbar session={props.session} />
       <Switch>
-        <Route exact path='/'  render={ () => <Home session={session} />} />
-        <Route exact path='/Dersler'  render={ () => <Dersler session={session} />} />
+        <Route exact path='/'  render={ () => <Home session={props.session} />} />
+        <Route exact path='/Dersler'  render={ () => <Dersler session={props.session} />} />
         <Route exact path='/Notlar'  render={ () => <Notlar  />} />
         <Route exact path='/Biyoloji'  render={ () => <Biyoloji  />}/>
         <Route exact path='/Felsefe'  render={ () => <Felsefe  />}/>
@@ -50,14 +50,14 @@ const Root = ({ session, refetch }) => (
         <Route exact path='/Matematik'  render={ () => <Matematik  />}/>
         <Route exact path='/Fizik'  render={ () => <Fizik  />} />
         <Route exact path='/Hakkımızda'  render={ () => <Hakkımız  />} />
-        <Route exact path='/Profil'  render={ () => <Profil session={session} refetch={refetch} />} />
-        <Route exact path='/Notekle'  render={ () => <AddNote session={session}  />} />
-        <Route exact path='/Kaydol' render={ () => <SigIn /> } />
-        <Route exact path='/Giris'  render={ () => <Login /> } />
+        <Route exact path='/Profil'  render={ () => <Profil session={props.session} refetch={props.refetch} />} />
+        <Route exact path='/Notekle'  render={ () => <AddNote session={props.session}  />} />
+        <Route exact path='/Kaydol' render={ () => <SigIn refetch={props.refetch} /> } />
+        <Route exact path='/Giris'  render={ () => <Login refetch={props.refetch} /> } />
         <Route exact path='/Dev'  render={ () => <Dev /> } />
         <PageNotFound />
       </Switch>
-      <Footer session = {session} />
+      <Footer session = {props.session} />
     </Fragment>
   </Router>
 );

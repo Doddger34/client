@@ -5,7 +5,7 @@ import { CreateUser } from '../queries/index';
 import { useHistory } from 'react-router';
 
 import '../Style/SigIn.css';
-const SignIn = () => {
+const SignIn = props => {
 	const [createUser, { loading, error }] = useMutation(CreateUser);
 	const [UserName, setUserName] = useState('');
 	const [password, setPassword] = useState('');
@@ -18,8 +18,8 @@ const SignIn = () => {
 			variables: { UserName: UserName, password: password, email: email },
 		}).then(async ({ data }) => {
 			sessionStorage.setItem('token', data.createUser.token);
+			await props.refetch();
 			history.push('/'); //anasayfaya gidiyoz
-			window.location.reload(); //sayfayı yenileyip activeUser's datasını alıyoruz
 		});
 	};
 	return (
