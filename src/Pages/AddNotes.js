@@ -9,7 +9,7 @@ import { useHistory } from "react-router";
 import auth from "../components/User/auth";
 import { Modal } from "react-bootstrap";
 
-const ShowConverts = (props) => {
+const ShowConverts = props => {
 	return (
 		<div>
 			<Modal
