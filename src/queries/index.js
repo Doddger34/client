@@ -354,8 +354,6 @@ export const GET_USER = gql`
       }
       Block
       role
-      CanDelete
-      createdAt
     }
   }
 `;
