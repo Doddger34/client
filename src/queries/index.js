@@ -273,6 +273,31 @@ export const GetPhysicsNotesQuery = gql`
 }
 `;
 
+export const GetTytNotesQuery = gql`
+  query {
+  Lesson(id: "5f58ace09f9a0d138cda4217") {
+    Name
+    Not {
+      id
+      Name
+      Link
+      Lesson{
+        Name
+      }
+      User {
+        id
+        UserName
+        email
+      }
+      Class{
+        id
+        ClassName
+      }
+    }
+  }
+}
+`;
+
 export const GetClass = gql`
   query {
     Classes{
@@ -354,6 +379,10 @@ export const GET_USER = gql`
       }
       Block
       role
+      Avatarurl
+      CanDelete
+      createdAt
+      isEmailConfirmed
     }
   }
 `;
