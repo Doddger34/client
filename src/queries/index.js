@@ -295,8 +295,7 @@ export const GetTytNotesQuery = gql`
       }
     }
   }
-}
-`;
+}`;
 
 export const GetClass = gql`
   query {
