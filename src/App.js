@@ -7,6 +7,7 @@ import Biyoloji from "./Dersler/Biyoloji";
 import Kimya from "./Dersler/Kimya";
 import Edebiyat from "./Dersler/Edebiyat";
 import Inglizce from "./Dersler/İnglizce";
+import Inglizce from "./Dersler/tyt.js";
 import Fizik from "./Dersler/Fizik";
 import Felsefe from "./Dersler/Felsefe";
 import Dın from "./Dersler/Din";
@@ -46,7 +47,8 @@ const Root = props => (
         <Route exact path='/Coğrafya'  render={ () => <Cografya  />}/>
         <Route exact path='/Kimya'  render={ () => <Kimya  />}/>
         <Route exact path='/Edebiyat'  render={ () => <Edebiyat  />} />
-        <Route exact path='/İngilizce'  render={ () => <Inglizce  />} />
+        <Route exact path='/İngilizce'  render={ () => <tyt/>} />
+        <Route exact path='/İngilizce'  render={ () => <Inglizce  />} />  
         <Route exact path='/Matematik'  render={ () => <Matematik  />}/>
         <Route exact path='/Fizik'  render={ () => <Fizik  />} />
         <Route exact path='/Hakkımızda'  render={ () => <Hakkımız  />} />
