@@ -379,10 +379,16 @@ export const GET_USER = gql`
       }
       Block
       role
+<<<<<<< HEAD
       Avatarurl
       CanDelete
       createdAt
       isEmailConfirmed
+=======
+    Avatarurl
+    CanDelete
+    createdAt
+>>>>>>> 1834369449f0a86ccb25687e2076ca3d4bcc0b75
     }
   }
 `;
