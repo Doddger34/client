@@ -19,10 +19,11 @@ import Login from "./Pages/Login";
 import SigIn from "./Pages/SignIn";
 import AddNote from "./Pages/AddNotes";
 import Dev from "./Pages/Dev";
+import Blog from './Pages/Blog';
 
 import sessionWrapperHOC from './components/User/SessionWrapperHOC';
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/container/Navbar";
+import Footer from "./components/container/Footer";
 
 import {
   BrowserRouter as Router ,
@@ -55,6 +56,7 @@ const Root = props => (
         <Route exact path='/Kaydol' render={ () => <SigIn refetch={props.refetch} /> } />
         <Route exact path='/Giris'  render={ () => <Login refetch={props.refetch} /> } />
         <Route exact path='/Dev'  render={ () => <Dev /> } />
+        <Route exact path='/Blog'  render={ () => <Blog session={props.session} /> } />
         <PageNotFound />
       </Switch>
       <Footer session = {props.session} />

@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from "react";
 import { NavLink } from "react-router-dom";
 
-import Icon from '../component/Icon';
+import Icon from '../../component/Icon';
 
-import "../Style/header.css";
-import Logout from "./Logout";
+import "../../Style/header.css";
+import Logout from "../Logout";
 
 class LinksWithLogin extends Component {
 	render() {

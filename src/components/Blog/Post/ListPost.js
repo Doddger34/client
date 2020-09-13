@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useQuery } from '@apollo/client';
 import { GetPosts } from '../../../queries/index';
-import BlogPost from '../components/BlogPost';
+import BlogPost from './BlogPost';
 
 const ListPost = () => {
     const { loading, data, error } = useQuery(GetPosts);
@@ -17,11 +17,9 @@ const ListPost = () => {
                 return(
                     <BlogPost 
                         key = { dat.id }
-                        id = { dat.id }
                         userName = { dat.User.UserName }
                         userRole= { dat.User.role }
                         content = { dat.content }
-                        like = { dat.like }
                     />
                 );
             })

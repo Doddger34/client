@@ -1,6 +1,8 @@
 import React from "react";
-import "../Style/Blog.css";
+import PropTypes from 'prop-types'
 import { Link } from "react-router-dom";
+
+import "../../../Style/Blog.css"
 
 const BlogPost = ({ content, userName, userRole }) => {
 	return (
@@ -23,7 +25,6 @@ const BlogPost = ({ content, userName, userRole }) => {
 															height="40"
 															width="40"
 															className="sf45f emlx bkms sbp7 a8c3 "
-															src="#"
 														/>
 														<div
 															className="sf45f emlx bkms sbp7 pmk7 oaz4 kr520xx j9is"
@@ -69,5 +70,11 @@ const BlogPost = ({ content, userName, userRole }) => {
 		</div>
 	);
 };
+
+BlogPost.propTypes = {
+	content: PropTypes.string.isRequired,
+	userRole: PropTypes.string.isRequired,
+	userName: PropTypes.string.isRequired
+}
 
 export default BlogPost;

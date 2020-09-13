@@ -378,54 +378,40 @@ export const GET_USER = gql`
       }
       Block
       role
-<<<<<<< HEAD
       Avatarurl
       CanDelete
       createdAt
-      isEmailConfirmed
-=======
-    Avatarurl
-    CanDelete
-    createdAt
->>>>>>> 1834369449f0a86ccb25687e2076ca3d4bcc0b75
+      Avatarurl
+      CanDelete
     }
   }
 `;
 
 export const CreatePosts = gql`
-  mutation($content: String!, $classId: ID!, $userId: ID!){
-    CreatePost(data:{content: $content, classId: $classId,userId: $userId }){
-      content
-      User{
-        id
-        UserName
-        role
-      }
-      Class{
-        id
-        ClassName
-      }
-      CreatedAt
-      
+  mutation {
+  CreatePost(data: { content: "asdads", userId: "5f16b183ad1a4000171e768d" }) {
+    id
+    User{
+      id
+      UserName
+      email
+			Avatarurl
     }
+    CreatedAt
   }
+}
+
 `;
 
 export const GetPosts = gql`
-  
   query {
   Posts {
     id
     content
-    img
     User {
       id
       UserName
       role
-    }
-    Class {
-      id
-      ClassName
     }
   }
 }

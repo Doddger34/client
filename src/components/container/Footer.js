@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "../Style/Footer.css";
-import Icon  from '../component/Icon';
+import "../../Style/Footer.css";
+import Icon  from '../../component/Icon';
 
 class Footer extends Component {
    render() {

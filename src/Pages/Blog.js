@@ -1,10 +1,11 @@
 import React from "react";
-import BlogInput from "../components/BlogInput";
-import ListPost from "../components/ListPost";
+import BlogInput from "../components/Blog/Input/BlogInput";
+import ListPost from "../components/Blog/Post/ListPost";
 import { Link } from "react-router-dom";
 import "../Style/Blog.css";
 
 const Blog = ({ session }) => {
+	//TODOS activeUser yoksa sadece post atma yeri olmasın postlar listelensin;
 	if (!session.activeUser) {
 		return (
 			<div className="bck whxa1s mas1cdz ">

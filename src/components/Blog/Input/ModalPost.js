@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Modal } from "react-bootstrap";
 import { useMutation, useQuery } from "@apollo/client";
-import ListClass from "./ListClass";
-import { CreatePosts, GetPosts } from "../queries/index";
+import { CreatePosts, GetPosts } from "../../../queries/index";
 
-const ModalPost = ( props ) => {
+const ModalPost = props  => {
 	const { refetch } = useQuery(GetPosts)
  	const [CreatePost, { loading }] = useMutation(CreatePosts);
 	const [content, setContent] = useState('');
-	const [classId, SetClassId] = useState('');
 	const [userId, SetUserId] = useState('');
+	console.log(content)
 	useEffect(() => {
 		if (props.session && props.session.activeUser) {
 			SetUserId(props.session.activeUser.id);
@@ -18,9 +17,10 @@ const ModalPost = ( props ) => {
 	const SubmitPost = (e) => {
 		e.preventDefault();
 		CreatePost({
-			variables: {  userId:userId, content: content, classId:classId },
+			variables: {  userId, content },
 		}).then(() => {
-			refetch(); //Paylaşım oldutan sonra postları yeniliyor;			props.onHide(); //Nodalı kapatıyor;
+			refetch(); //Paylaşım oldutan sonra postları yeniliyor;			
+			props.onHide(); //Modalı kapatıyor;
 		})
 	};
 
@@ -40,10 +40,10 @@ const ModalPost = ( props ) => {
 				<Modal.Body>
 					<form onSubmit={SubmitPost}>
 						<div className="brb mb-2">
-							<div class="form-group ">
+							<div className="form-group ">
 								<textarea
 									className=" e2719Ze apn form-control stjowx stjowy vblr7 sbbr4 pbrr3 cbtr8 bck4g arex mwh brn rear fstd lh4t wt1v ws1"
-									placeholder="Sorunuz nedir ? "
+									placeholder="Düşünceniz nedir ?" 
 									required
 									id="message-text"
 									value={content}
@@ -51,7 +51,6 @@ const ModalPost = ( props ) => {
 								/>
 							</div>
 						</div>
-						<ListClass ClassId={classId} SetClassId={SetClassId} />
 						<div className="bt4vf">
 							<button
 								type="submit"

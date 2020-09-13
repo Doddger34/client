@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import ModalPost from "../ModalPost";
+import ModalPost from "./ModalPost";
 
-const BlogInput = ({ session }) => {
+const BlogInput = props => {
 	const [modalShow, setModalShow] = useState(false);
-	
 	return (
 		<div className="sz34e btwsd">
 			<div className="e7sdg ze3d">
@@ -71,7 +70,7 @@ const BlogInput = ({ session }) => {
 				</div>
 			</div>
 			<ModalPost
-				session={session}
+				session={props.session}
 				show={modalShow}
 				onHide={() => setModalShow(false)}
 			/>
