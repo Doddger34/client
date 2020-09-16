@@ -55,7 +55,7 @@ const BlogInput = props => {
 													setModalShow(true)
 												}
 											>
-												Sorunuz nedir ?
+												Düşünceniz nedir ?
 											</div>
 											<div
 												style={{ borderRadius: "20px" }}

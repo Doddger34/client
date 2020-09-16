@@ -7,7 +7,6 @@ import Biyoloji from "./Dersler/Biyoloji";
 import Kimya from "./Dersler/Kimya";
 import Edebiyat from "./Dersler/Edebiyat";
 import Inglizce from "./Dersler/İnglizce";
-import Inglizce from "./Dersler/tyt.js";
 import Fizik from "./Dersler/Fizik";
 import Felsefe from "./Dersler/Felsefe";
 import Dın from "./Dersler/Din";
@@ -53,7 +52,7 @@ const Root = props => (
         <Route exact path='/Matematik'  render={ () => <Matematik  />}/>
         <Route exact path='/Fizik'  render={ () => <Fizik  />} />
         <Route exact path='/Hakkımızda'  render={ () => <Hakkımız  />} />
-        <Route exact path='/Profil'  render={ () => <Profil session={props.session} refetch={props.refetch} />} />
+        <Route exact path='/profil'  render={ () => <Profil session={props.session} refetch={props.refetch} />} />
         <Route exact path='/Notekle'  render={ () => <AddNote session={props.session}  />} />
         <Route exact path='/Kaydol' render={ () => <SigIn refetch={props.refetch} /> } />
         <Route exact path='/Giris'  render={ () => <Login refetch={props.refetch} /> } />

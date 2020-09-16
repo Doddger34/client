@@ -7,9 +7,7 @@ import BlogPost from './BlogPost';
 const ListPost = () => {
     const { loading, data, error } = useQuery(GetPosts);
 	if (loading) return <div style={{textAlign:'center'}}>Yükleniyor...</div>;
-    if (error) return <div style={{textAlign:'center'}}>Hata...</div>;   
-    console.log(data);
-   
+    if (error) return <div style={{textAlign:'center'}}>Hata...</div>;    
     return (
         <div>
         {
